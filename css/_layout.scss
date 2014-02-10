@@ -1,0 +1,59 @@
+$gutter: 20px;
+
+// Rows
+.row {
+    clear: both;
+    overflow: hidden;
+}
+
+.row--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 $gutter/2;
+}
+
+.row--cell {
+    display: table;
+    width: 100%;
+    border-spacing: $gutter $gutter / 2;
+}
+
+.row__unit {
+    margin: $gutter/2;
+    display: table-cell;
+    vertical-align: top;
+    background: white;
+    overflow: hidden;
+    flex: 1;
+}
+
+// Columns
+.col-12 {
+    width: 100%;
+}
+
+.col-9 {
+    width: 100% / 1.33333333333;
+}
+
+.col-8 {
+    width: 100% / 1.5;
+}
+
+.col-6 {
+    width: 100% / 2;
+}
+
+.col-4 {
+    width: 100% / 3;
+}
+
+.col-3 {
+    width: 100% / 4;
+}
+
+// Fixed Columns
+.col-3.fixed {
+    min-width: (997px - ($gutter * 4)) / 4;
+}
