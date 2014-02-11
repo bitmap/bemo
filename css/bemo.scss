@@ -1,6 +1,11 @@
 @import 'mixins';
-@import 'reset';
-@import 'typography';
-@import 'layout';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/layout';
+
+// Common Components
+@import 'components/buttons';
 
 [hidden] {display: none;}
