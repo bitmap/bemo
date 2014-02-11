@@ -13,11 +13,18 @@ module.exports = function(grunt) {
           'bemo.css':'css/bemo.scss'
         }
       }
+    },
+    cssmin: {
+      css: {
+        src: 'bemo.css',
+        dest: 'bemo.min.css'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('compile', ['sass']);
+  grunt.registerTask('default', ['sass', 'cssmin']);
 
 };
