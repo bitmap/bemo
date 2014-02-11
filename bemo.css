@@ -51,26 +51,16 @@ a:hover {
   overflow: hidden;
 }
 
-.row--flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 0 10px;
-}
-
 .row--cell {
   display: table;
   width: 100%;
   border-spacing: 20px 10px;
 }
 
-.row__unit {
-  margin: 10px;
+.row--cell.row__unit {
   display: table-cell;
   vertical-align: top;
-  background: white;
   overflow: hidden;
-  flex: 1;
 }
 
 .col-12 {
@@ -78,23 +68,23 @@ a:hover {
 }
 
 .col-9 {
-  width: 100% / 1.33333333333;
+  width: 75.0%;
 }
 
 .col-8 {
-  width: 100% / 1.5;
+  width: 66.66667%;
 }
 
 .col-6 {
-  width: 100% / 2;
+  width: 50%;
 }
 
 .col-4 {
-  width: 100% / 3;
+  width: 33.33333%;
 }
 
 .col-3 {
-  width: 100% / 4;
+  width: 25%;
 }
 
 .col-3.fixed {
