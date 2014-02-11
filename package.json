@@ -1,0 +1,10 @@
+{
+  "name": "bemo",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "git://github.com/bitmap/bemo.git",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.2"
+  }
+}
