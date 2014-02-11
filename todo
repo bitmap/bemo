@@ -1,19 +1,20 @@
 BEMO
 
 # Base
-  – layout.css
-  – typography.css
+  - reset
+  – layout (grid)
+  – typography
 
 # Components
-  – alerts.css
-  – buttons.css
-  – forms.css
-  – list.css
-  – nav.css
-  – tables.css
+  – alerts
+  – buttons
+  – forms
+  – list
+  – nav
+  – tables
 
 # Modules
-  – aside.css
-  – footer.css
-  – header.css
-  - panel.css
+  – aside
+  – footer
+  – header
+  - panel
