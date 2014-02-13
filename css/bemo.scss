@@ -1,11 +1,13 @@
+@import 'config';
 @import 'mixins';
+@import 'reset';
 
 // Base Styles
-@import 'base/reset';
 @import 'base/typography';
 @import 'base/layout';
 
 // Common Components
 @import 'components/buttons';
+@import 'components/media';
 
 [hidden] {display: none;}
