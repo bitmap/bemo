@@ -2,7 +2,7 @@
   "name": "bemo",
   "version": "0.0.1",
   "repository": "git://github.com/bitmap/bemo.git",
-  "author": "bitmap <bemo@bitmap.io> (http://bitmap.io/)",
+  "private": true,
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.7.2",
