@@ -1,0 +1,21 @@
+{
+  "name": "bemo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bitmap/bemo",
+  "authors": [
+    "Cabe Branson <caleb.branson@gmail.com>"
+  ],
+  "description": "oh oh css",
+  "main": "bemo.css",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
