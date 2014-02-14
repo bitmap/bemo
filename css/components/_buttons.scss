@@ -1,0 +1,54 @@
+@mixin btn-highlight($color) {
+  background-color: $color;
+  @if lightness($color) < 50% {color: white}
+  @else {color: inherit;}
+
+  &:hover {
+    background: mix(white, $color, 15%);
+    @if lightness($color) < 50% {color: white}
+    @else {color: inherit;}
+  }
+
+  &:active {
+    background: mix(black, $color, 5%);
+    box-shadow: inset 0 0.125em 0 fade-out(black, 0.85);
+  }
+}
+
+.btn {
+  @include btn-highlight(#ddd);
+  border: 0;
+  display: inline-block;
+  border-radius: 0.25em;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0 0.25em 0 0;
+  outline: 0;
+  padding: 0.5em 1em;
+  box-shadow: inset 0 -0.125em 0 fade-out(black, 0.85);
+  line-height: normal;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  &[disabled], 
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active {
+    background: #eee;
+    color: #ccc;
+    box-shadow: none;
+    cursor: default;
+  }
+}
+
+.btn--primary {
+  @include btn-highlight(#95c535);
+}
+
+.btn--secondary {
+  @include btn-highlight(#0A6FA7);
+}

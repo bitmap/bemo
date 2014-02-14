@@ -1,7 +1,10 @@
 BEMO
 
-# Base
   - reset
+  - utils (mixins)
+  - variables (config?)
+
+# Base
   – layout (grid)
   – typography
 

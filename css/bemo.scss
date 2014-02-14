@@ -2,6 +2,10 @@
 @import 'mixins';
 @import 'reset';
 
+body {
+	font-family: sans-serif;
+	line-height: 1.4;
+}
 // Base Styles
 @import 'base/typography';
 @import 'base/layout';
