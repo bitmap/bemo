@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded',
-          cacheLocation: 'css/.sass-cahce'
+          cacheLocation: 'css/.sass-cache'
         },
         files: {
           'bemo.css':'css/bemo.scss'
