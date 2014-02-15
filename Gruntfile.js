@@ -46,19 +46,20 @@ module.exports = function(grunt) {
         options: {
           livereload: false,
         },
-        files: ['css/bemo.scss'],
+        files: ['css/**/*.scss'],
         tasks: ['sass']
       },
       css: {
         files: ['bemo.css'],
-        tasks: ['cssmin', 'csslint']
+        //tasks: ['cssmin', 'csslint']
       },
     },
     connect: {
       port: {
         options: {
           port: 35729,
-          base: ''
+          base: '',
+          open: true
         }
       }
     }
