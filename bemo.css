@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -98,8 +102,6 @@ a:hover {
 }
 
 .btn {
-  background-color: #dddddd;
-  color: inherit;
   border: 0;
   display: inline-block;
   border-radius: 0.25em;
@@ -115,14 +117,8 @@ a:hover {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
-.btn:hover {
-  background-color: #e2e2e2;
+  background-color: #dddddd;
   color: inherit;
-}
-.btn:active {
-  background-color: #d1d1d1;
-  box-shadow: inset 0 0.125em 0 rgba(0, 0, 0, 0.15);
 }
 .btn:focus {
   outline: 0;
@@ -132,6 +128,14 @@ a:hover {
   color: #ccc;
   box-shadow: none;
   cursor: default;
+}
+.btn:hover {
+  background-color: #e2e2e2;
+  color: inherit;
+}
+.btn:active {
+  background-color: #d1d1d1;
+  box-shadow: inset 0 0.125em 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn--primary {

@@ -1,4 +1,9 @@
 @mixin linear-gradient($color1, $color2) {
-	background-image: -webkit-linear-gradient($color1, $color2);
-	background-image: linear-gradient($color1, $color2)
+  background-image: -webkit-linear-gradient($color1, $color2);
+  background-image: linear-gradient($color1, $color2)
+}
+
+@mixin check-lightness($var) {
+  @if lightness($var) < 50% {color: white}
+  @else {color: inherit;}
 }

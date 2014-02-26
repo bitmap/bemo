@@ -1,0 +1,17 @@
+.nav {
+  @extend ul;
+  background-color: $theme_primary;
+  @include check-lightness($theme_primary);
+}
+
+.nav--horizontal {
+  width: 100%;
+  @extend .wrapper;
+  .nav__item {display: inline-block}
+}
+
+.nav__item {
+  padding: ($gutter / 2);
+  display: block;
+  color: white;
+}

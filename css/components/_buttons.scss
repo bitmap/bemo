@@ -1,12 +1,10 @@
 @mixin btn-highlight($color) {
   background-color: $color;
-  @if lightness($color) < 50% {color: white}
-  @else {color: inherit;}
+  @include check-lightness($color);
 
   &:hover {
     background-color: mix(white, $color, 15%);
-    @if lightness($color) < 50% {color: white}
-    @else {color: inherit;}
+    @include check-lightness($color);
   }
 
   &:active {
@@ -15,8 +13,7 @@
   }
 }
 
-.btn {
-  @include btn-highlight(#ddd);
+@mixin btn() {
   border: 0;
   display: inline-block;
   border-radius: 0.25em;
@@ -46,10 +43,15 @@
   }
 }
 
+.btn {
+  @include btn();
+  @include btn-highlight(#ddd);
+}
+
 .btn--primary {
-  @include btn-highlight(#94C535);
+  @include btn-highlight($theme_primary);
 }
 
 .btn--secondary {
-  @include btn-highlight(#0A6FA7);
+  @include btn-highlight($theme_secondary);
 }
