@@ -5,18 +5,9 @@ h4 {font-size: $h4;}
 h5 {font-size: $h5;}
 h6 {font-size: $h6;}
 
-p  {
-    margin-top: 0;
-    line-height: 1.4;
+p {
+  margin-top: 0;
+  line-height: 1.4;
 }
 
 small {font-size: $sm;}
-
-a {
-    color: $color_link;
-    cursor: pointer;
-
-    &:hover {
-        color: $color_link-hover;
-    }
-}

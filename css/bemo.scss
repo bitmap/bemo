@@ -3,15 +3,27 @@
 @import 'reset';
 
 body {
-	font-family: sans-serif;
-	line-height: 1.4;
+  font-family: sans-serif;
+  line-height: 1.4;
 }
+
+a {
+    color: $theme_link;
+    cursor: pointer;
+
+    &:hover {
+        color: $theme_link-hover;
+    }
+}
+
 // Base Styles
 @import 'base/typography';
 @import 'base/layout';
 
 // Common Components
+@import 'components/nav';
 @import 'components/buttons';
 @import 'components/media';
+
 
 [hidden] {display: none;}

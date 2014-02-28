@@ -16,32 +16,14 @@
     overflow: hidden;
 }
 
-// Columns
-.col-12 {
-    width: 100%;
+@for $i from 1 through $grid_columns {
+  .col-#{$i} {
+    width: ((100 / $grid_columns) * $i) * 1%;
+  }
 }
 
-.col-9 {
-    width: (100% / 1.33333333333);
-}
-
-.col-8 {
-    width: (100% / 1.5);
-}
-
-.col-6 {
-    width: (100% / 2);
-}
-
-.col-4 {
-    width: (100% / 3);
-}
-
-.col-3 {
-    width: (100% / 4);
-}
-
-// Fixed Columns
-.col-3.fixed {
-    min-width: ((997px - ($gutter * 4)) / 4);
+@for $i from 1 through $grid_columns {
+  .col-#{$i}.fixed {
+    width: (($grid_maxwidth / $grid_columns) * $i) * 1;
+  }
 }
