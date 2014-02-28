@@ -1,4 +1,4 @@
-@mixin btn-highlight($color) {
+@mixin btn-variant($color) {
   background-color: $color;
   @include check-lightness($color);
 
@@ -13,7 +13,7 @@
   }
 }
 
-@mixin btn() {
+@mixin btn {
   border: 0;
   display: inline-block;
   border-radius: 0.25em;
@@ -44,14 +44,14 @@
 }
 
 .btn {
-  @include btn();
-  @include btn-highlight(#ddd);
+  @include btn;
+  @include btn-variant(#ddd);
 }
 
 .btn--primary {
-  @include btn-highlight($theme_primary);
+  @include btn-variant($theme_primary);
 }
 
 .btn--secondary {
-  @include btn-highlight($theme_secondary);
+  @include btn-variant($theme_secondary);
 }
