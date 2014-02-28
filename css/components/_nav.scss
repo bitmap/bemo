@@ -1,17 +1,37 @@
 .nav {
-  @extend ul;
-  background-color: $theme_primary;
-  @include check-lightness($theme_primary);
+  background-color: $nav_background;
+  @include check-lightness($nav_background);
 }
 
-.nav--horizontal {
-  width: 100%;
-  @extend .wrapper;
-  .nav__item {display: inline-block}
+// basic block styles to extend
+.nav__block {
+  display: block;
+  color: inherit;
+  padding: ($gutter / 2) $gutter;
 }
 
 .nav__item {
-  padding: ($gutter / 2);
-  display: block;
-  color: white;
+  @extend .nav__block;
+  text-decoration: none;
+  &:hover {
+    @if lightness($nav_background) > 50% {
+      background: rgba(black, 0.025);
+    } @else {
+      background: rgba(white, 0.10);
+    }
+    color: inherit;
+  }
+}
+
+.nav__heading {
+  @extend .nav__block;
+  border-bottom: 1px solid rgba(black, 0.10);
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.nav--horizontal {
+  li {display: inline-block}
+  .nav__heading {border: none}
 }
