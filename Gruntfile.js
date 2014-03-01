@@ -10,7 +10,16 @@ module.exports = function(grunt) {
           cacheLocation: 'css/.sass-cache'
         },
         files: {
-          'bemo.css':'css/bemo.scss'
+          'bemo.css':'css/bemo.scss',
+        }
+      },
+      dev: {
+        options: {
+          style: 'expanded',
+          cacheLocation: 'css/.sass-cache'
+        },
+        files: {
+          'bemo-dev.css':'css/bemo.scss',
         }
       }
     },
@@ -47,10 +56,10 @@ module.exports = function(grunt) {
           livereload: false,
         },
         files: ['css/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass:dev']
       },
       css: {
-        files: ['bemo.css'],
+        files: ['bemo-dev.css'],
         //tasks: ['cssmin', 'csslint']
       },
     },
@@ -71,7 +80,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['sass', 'cssmin']);
+  grunt.registerTask('default', ['sass:dist', 'cssmin']);
   grunt.registerTask('dev', ['connect', 'watch']);
 
 };
