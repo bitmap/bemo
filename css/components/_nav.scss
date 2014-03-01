@@ -4,14 +4,14 @@
 }
 
 // basic block styles to extend
-.nav__block {
+%nav__block {
   display: block;
   color: inherit;
   padding: ($gutter / 2) $gutter;
 }
 
 .nav__item {
-  @extend .nav__block;
+  @extend %nav__block;
   text-decoration: none;
   &:hover {
     @if lightness($nav_background) > 50% {
@@ -24,7 +24,7 @@
 }
 
 .nav__heading {
-  @extend .nav__block;
+  @extend %nav__block;
   border-bottom: 1px solid rgba(black, 0.10);
   text-transform: uppercase;
   font-size: 90%;
