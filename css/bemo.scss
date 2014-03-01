@@ -8,12 +8,12 @@ body {
 }
 
 a {
-    color: $theme_link;
-    cursor: pointer;
+  color: $theme_link;
+  cursor: pointer;
 
-    &:hover {
-        color: $theme_link-hover;
-    }
+  &:hover {
+      color: $theme_link-hover;
+  }
 }
 
 // Base Styles
