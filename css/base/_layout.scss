@@ -1,7 +1,23 @@
-// Rows
+%row {
+  overflow: hidden;
+  clear: both;
+}
+
+@for $i from 1 through $grid_columns {
+  %fluid-columns-#{$i} {
+    width: ((100 / $grid_columns) * $i) * 1%;
+  }
+}
+
+@for $i from 1 through $grid_columns {
+  %fixed-columns-#{$i} {
+    width: (($grid_maxwidth / $grid_columns) * $i) * 1;
+  }
+}
+
+// rows
 .row {
-    clear: both;
-    overflow: hidden;
+    @extend %row;
 }
 
 .row--cell {
@@ -16,14 +32,16 @@
     overflow: hidden;
 }
 
+// columns
 @for $i from 1 through $grid_columns {
   .col-#{$i} {
-    width: ((100 / $grid_columns) * $i) * 1%;
+    @extend %fluid-columns-#{$i};
   }
 }
 
 @for $i from 1 through $grid_columns {
   .col-#{$i}.fixed {
-    width: (($grid_maxwidth / $grid_columns) * $i) * 1;
+    @extend %fixed-columns-#{$i};
   }
 }
+
