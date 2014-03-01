@@ -57,20 +57,8 @@ small {
 }
 
 .row {
+  overflow: hidden;
   clear: both;
-  overflow: hidden;
-}
-
-.row--cell {
-  display: table;
-  width: 100%;
-  border-spacing: 20px 10px;
-}
-
-.row--cell.row__unit {
-  display: table-cell;
-  vertical-align: top;
-  overflow: hidden;
 }
 
 .col-1 {
@@ -169,12 +157,24 @@ small {
   width: 1000px;
 }
 
+.row--cell {
+  display: table;
+  width: 100%;
+  border-spacing: 20px 10px;
+}
+
+.row--cell.row__unit {
+  display: table-cell;
+  vertical-align: top;
+  overflow: hidden;
+}
+
 .nav {
   background-color: white;
   color: inherit;
 }
 
-.nav__block, .nav__item, .nav__heading {
+.nav__item, .nav__heading {
   display: block;
   color: inherit;
   padding: 10px 20px;
