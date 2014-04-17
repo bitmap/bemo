@@ -202,6 +202,32 @@ small {
   border: none;
 }
 
+.alert {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 1px;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.alert--error {
+  background: rgba(190, 65, 55, 0.15);
+  border-color: #be4137;
+  color: #be4137;
+}
+
+.alert--success {
+  background: rgba(48, 142, 69, 0.15);
+  border-color: #308e45;
+  color: #308e45;
+}
+
+.alert--info {
+  background: rgba(187, 162, 40, 0.15);
+  border-color: #bba228;
+  color: #bba228;
+}
+
 .btn {
   border: 0;
   display: inline-block;
