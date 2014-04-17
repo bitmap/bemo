@@ -1,0 +1,30 @@
+
+@mixin alert() {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 1px;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+@mixin alertColor($hue) {
+  background: fade-out($hue, 0.85);
+  border-color: $hue;
+  color: $hue;
+}
+
+.alert {
+  @include alert();
+}
+
+.alert--error {
+  @include alertColor($theme_alerts_errors);
+}
+
+.alert--success {
+  @include alertColor($theme_alerts_success);
+}
+
+.alert--info {
+  @include alertColor($theme_alerts);
+}
