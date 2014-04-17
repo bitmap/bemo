@@ -5,16 +5,16 @@ BEMO
   - variables (config?)
 
 # Base
-  – layout (grid)
-  – typography
+  * layout (grid)
+  * typography
 
 # Components
-  – alerts
-  – buttons
+  * alerts
+  * buttons
   – forms
   – lists
   - blockquotes
-  – nav
+  * nav
   – tables
 
 # Modules
