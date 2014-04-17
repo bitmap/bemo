@@ -1,4 +1,4 @@
-$gutter: 20px;
+$gutter: 1em;
 
 $h1: 2.027em;
 $h2: 1.602em;
@@ -16,6 +16,9 @@ $theme_alerts_success: #308E45;
 
 $theme_link: #00f;
 $theme_link-hover: #f00;
+
+$border: 0.125em solid;
+$border_radius: 0.25em;
 
 $grid_maxwidth: 1000px;
 $grid_columns: 12;

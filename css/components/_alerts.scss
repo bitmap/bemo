@@ -1,20 +1,24 @@
-
 @mixin alert() {
-  margin: 8px 0;
-  padding: 8px 12px;
-  border-radius: 1px;
-  border: 1px solid;
+  font-size: .75em;
+  margin: ($gutter/4) 0;
+  padding: ($gutter/4) ($gutter/2);
+  border-radius: $border_radius;
+  border: $border;
   font-weight: bold;
 }
 
 @mixin alertColor($hue) {
   background: fade-out($hue, 0.85);
-  border-color: $hue;
   color: $hue;
 }
 
 .alert {
   @include alert();
+}
+
+.alert--small {
+	margin: ($gutter/2) 0;
+  	padding: ($gutter/2) $gutter;
 }
 
 .alert--error {

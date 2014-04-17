@@ -16,7 +16,7 @@
 @mixin btn {
   border: 0;
   display: inline-block;
-  border-radius: 0.25em;
+  border-radius: $border_radius;
   font-family: inherit;
   font-size: inherit;
   font-weight: bold;
