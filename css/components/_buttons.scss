@@ -2,28 +2,25 @@
   background-color: $color;
   @include check-lightness($color);
 
-  &:hover {
-    background-color: mix(white, $color, 15%);
+  &:hover, &:focus {
+    background-color: mix(black, $color, 5%);
     @include check-lightness($color);
   }
 
   &:active {
-    background-color: mix(black, $color, 5%);
-    box-shadow: inset 0 0.125em 0 fade-out(black, 0.85);
+    background-color: mix(black, $color, 15%);
+    box-shadow: inset 0 0.125em 0 $theme_border;
   }
 }
 
 @mixin btn {
-  border: 0;
+  border: $border $theme_border;
   display: inline-block;
   border-radius: $border_radius;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: bold;
+font-weight: bold;
   margin: 0 0.25em 0 0;
   padding: 0.5em 1em;
-  box-shadow: inset 0 -0.125em 0 fade-out(black, 0.85);
-  line-height: normal;
+  box-shadow: inset 0 1px 0 fade-out(white, 0.75);
   cursor: pointer;
   text-decoration: none;
   -webkit-user-select: none;
@@ -32,15 +29,7 @@
 
   &:focus { outline: 0 }
 
-  &[disabled],
-  &[disabled]:hover,
-  &[disabled]:focus,
-  &[disabled]:active {
-    background-color: #eee;
-    color: #ccc;
-    box-shadow: none;
-    cursor: default;
-  }
+  @include disabled-state();
 }
 
 .btn {

@@ -7,3 +7,24 @@
   @if lightness($var) < 50% {color: white}
   @else {color: inherit;}
 }
+
+@mixin disabled-state {
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active {
+    background-color: $theme_border;
+    color: #A9A9A9;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: default;
+    font-weight: normal;
+  }
+}
+
+@mixin focus-state {
+  &:focus {
+    outline: 0;
+    border-color: $theme_primary;
+  }
+}

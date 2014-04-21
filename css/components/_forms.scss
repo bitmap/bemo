@@ -1,0 +1,36 @@
+.form {
+  margin-bottom: $gutter;
+  overflow: hidden;
+}
+
+.form--stacked .form__control,
+.form--stacked .form__label {
+  display: block;
+}
+
+.form__group .form__label {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.form__group--footer {
+  margin-left: 6.8em;
+}
+
+.form__label {
+  font-weight: bold;
+  min-width: 6em;
+  margin: ($gutter/4);
+}
+
+.form__control {
+  border: $border $theme_border;
+  border-radius: $border_radius;
+  height: 35px; // normalize selects???
+  padding: 0.5em 1em;
+  margin-bottom: $gutter;
+
+  @include focus-state();
+  @include disabled-state();
+}
