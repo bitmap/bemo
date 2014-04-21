@@ -1,17 +1,9 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-
-pids
-logs
-results
-
+// Development
 npm-debug.log
 node_modules
 .sass-cache
 bemo-dev.css
+normalize.scss
+*.sublime-project
+*.sublime-workspace
+
