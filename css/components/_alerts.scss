@@ -1,5 +1,4 @@
 @mixin alert() {
-  font-size: .75em;
   margin: ($gutter/4) 0;
   padding: ($gutter/4) ($gutter/2);
   border-radius: $border_radius;
