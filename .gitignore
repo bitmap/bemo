@@ -6,4 +6,4 @@ bemo-dev.css
 normalize.scss
 *.sublime-project
 *.sublime-workspace
-
+tmp
