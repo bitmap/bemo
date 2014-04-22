@@ -71,6 +71,13 @@ module.exports = function(grunt) {
           open: true
         }
       }
+    },
+    bake: {
+      build: {
+          files: {
+              'css/tests/baked.htm': 'css/tests/oven.htm'
+          }
+      }
     }
   });
 
@@ -79,6 +86,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-bake');
 
   grunt.registerTask('default', ['sass:dist', 'cssmin']);
   grunt.registerTask('dev', ['connect', 'watch']);

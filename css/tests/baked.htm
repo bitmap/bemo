@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="\bemo-dev.css">
+  </head>
+  <body style="width: 600px; margin: 2em auto;">
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="\bemo-dev.css">
+    
+    <nav class="nav nav--horizontal">
+    
+      <ul>
+        <li class="nav__heading">Heading</li>
+        <li><a class="nav__item" href="#">Item 1</a></li>
+        <li><a class="nav__item" href="#">Item 2</a></li>
+        <li><a class="nav__item" href="#">Item With longer Text</a></li>
+      </ul>
+    </nav>
+    
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="\bemo-dev.css">
+    
+    <div style="padding: 20px">
+    
+    	<button class="btn">No Modifier</button>
+    	<a href="#" class="btn">Anchor</a>
+    	<button class="btn btn--primary">Primary</button>
+    	<button class="btn btn--secondary">Secondary</button>
+    	<button class="btn btn--primary" disabled>Disabled</button>
+    
+    </div>
+    <div class="alert alert--error">Error</div>
+    <div class="alert alert--success">Success</div>
+    <div class="alert alert--info">Whatever</div>
+    
+    <form class="form">
+      <label class="form__label">Username</label>
+      <input type="username" placeholder="Username" class="form__control"/>
+      <label class="form__label">Password</label>
+      <input type="password" placeholder="Password" class="form__control"/>
+      <select placeholder="Pick One" class="form__control">
+        <option>Oregon</option>
+        <option>Illinois</option>
+        <option>Alabama</option>
+        <option>New York</option>
+      </select>
+      <button class="btn btn--primary">Log In</button>
+    </form>
+    
+    <form class="form form--stacked">
+      <label class="form__label">Username</label>
+      <input type="username" placeholder="Username" class="form__control"/>
+      <label class="form__label">Password</label>
+      <input type="password" placeholder="Password" class="form__control"/>
+      <select placeholder="Pick One" class="form__control">
+        <option>Oregon</option>
+        <option>Illinois</option>
+        <option>Alabama</option>
+        <option>New York</option>
+      </select>
+      <button class="btn btn--primary">Log In</button>
+    </form>
+    
+    <form class="form">
+      <div class="form__group">
+        <label class="form__label">Username</label>
+        <input type="username" placeholder="Username" class="form__control"/>
+      </div>
+      <div class="form__group">
+        <label class="form__label">Password</label>
+        <input type="password" placeholder="Password" class="form__control"/>
+      </div>
+      <div class="form__group--footer">
+        <button class="btn btn--primary">Log In</button>
+      </div>
+    </form>
+    
+    <form class="form">
+      <input type="username" placeholder="Username" class="form__control" disabled/>
+      <input type="password" placeholder="Password" class="form__control" disabled/>
+      <button class="btn btn--primary" disabled>Log In</button>
+    </form>
+    <form class="form form--stacked">
+      <input type="username" placeholder="Username" class="form__control" disabled/>
+      <input type="password" placeholder="Password" class="form__control" disabled/>
+      <button class="btn btn--primary" disabled>Log In</button>
+    </form>
+    
+  </body>
+</html>
