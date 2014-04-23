@@ -19,11 +19,10 @@
     box-shadow: none;
     text-shadow: none;
     cursor: default;
-    font-weight: normal;
   }
 }
 
-@mixin focus-state {
+@mixin input-focus-state {
   &:focus {
     outline: 0;
     border-color: $theme_primary;

@@ -13,11 +13,11 @@ ul {
 input, 
 button, 
 select, 
-textarea {
+textarea,
+.btn {
   color: inherit;
   font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  line-height: normal;
   text-transform: none;
 }
 

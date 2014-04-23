@@ -2,13 +2,13 @@
   margin: ($gutter/4) 0;
   padding: ($gutter/4) ($gutter/2);
   border-radius: $border_radius;
-  border: $border;
+  // border: $border;
   font-weight: bold;
 }
 
 @mixin alertColor($hue) {
   background: fade-out($hue, 0.85);
-  color: $hue;
+  color: darken($hue, 25%);
 }
 
 .alert {
@@ -17,17 +17,17 @@
 
 .alert--small {
 	margin: ($gutter/2) 0;
-  	padding: ($gutter/2) $gutter;
+  padding: ($gutter/2) $gutter;
 }
 
 .alert--error {
-  @include alertColor($theme_alerts_errors);
+  @include alertColor($theme_alert-errors);
 }
 
 .alert--success {
-  @include alertColor($theme_alerts_success);
+  @include alertColor($theme_alert-success);
 }
 
 .alert--info {
-  @include alertColor($theme_alerts);
+  @include alertColor($theme_alert-warning);
 }

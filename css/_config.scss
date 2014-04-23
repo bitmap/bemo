@@ -12,16 +12,16 @@ $theme_text-color: #222;
 
 $theme_primary: #94C535;
 $theme_secondary: #0A6FA7;
-$theme_alerts: #BBA228;
-$theme_alerts_errors: #BE4137;
-$theme_alerts_success: #308E45;
+$theme_alert-warning: #FAD232;
+$theme_alert-errors: #DD514C;
+$theme_alert-success: #5EB95E;
 $theme_border: #CCC;
 
 $theme_link: #00f;
 $theme_link-hover: #f00;
 
 $border: 0.125em solid;
-$border_radius: 0.25em;
+$border_radius: 2px;
 
 $grid_maxwidth: 1000px;
 $grid_columns: 12;

@@ -1,8 +1,3 @@
-.form {
-  margin-bottom: $gutter;
-  overflow: hidden;
-}
-
 .form--stacked .form__control,
 .form--stacked .form__label {
   display: block;
@@ -25,12 +20,11 @@
 }
 
 .form__control {
-  border: $border $theme_border;
+  border: $border rgba(0,0,0,0.1);
   border-radius: $border_radius;
-  height: 35px; // normalize selects???
   padding: 0.5em 1em;
   margin-bottom: $gutter;
 
-  @include focus-state();
+  @include input-focus-state();
   @include disabled-state();
 }

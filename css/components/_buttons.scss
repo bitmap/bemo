@@ -4,12 +4,9 @@
 }
 
 @mixin btn {
-  border: 0;
-  height: 35px;
   display: inline-block;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: $border_radius;
-  font-weight: bold;
-  margin: 0 0.25em 0 0;
   padding: 0.5em 1em;
   cursor: pointer;
 
@@ -22,7 +19,6 @@
   &:active {
     background-image: none;
     box-shadow: inset 0 2px 2px fade-out(black, 0.9);
-
   }
 
   @include disabled-state();
@@ -34,8 +30,4 @@
 
 .btn--primary {
   @include btn-variant($theme_primary);
-}
-
-.btn--secondary {
-  @include btn-variant($theme_secondary);
 }
