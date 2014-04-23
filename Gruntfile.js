@@ -55,7 +55,11 @@ module.exports = function(grunt) {
         tasks: ['sass:dev']
       },
       css: {
-        files: ['bemo-dev.css'],
+        files: ['bemo-dev.css']
+      },
+      csstests: {
+        files: ['css/tests/*.htm'],
+        tasks: ['bake:build']
       },
     },
     connect: {
@@ -70,7 +74,7 @@ module.exports = function(grunt) {
     bake: {
       build: {
           files: {
-              'css/tests/baked.htm': 'css/tests/oven.htm'
+              'smoketest.htm': 'css/tests/oven.htm'
           }
       }
     }
