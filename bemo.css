@@ -13,11 +13,11 @@ ul {
 input,
 button,
 select,
-textarea {
+textarea,
+.btn {
   color: inherit;
   font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  line-height: normal;
   text-transform: none;
 }
 
@@ -223,8 +223,7 @@ small {
 .alert {
   margin: 0.25em 0;
   padding: 0.25em 0.5em;
-  border-radius: 0.25em;
-  border: 0.125em solid;
+  border-radius: 2px;
   font-weight: bold;
 }
 
@@ -234,27 +233,24 @@ small {
 }
 
 .alert--error {
-  background: rgba(190, 65, 55, 0.15);
-  color: #be4137;
+  background: rgba(221, 81, 76, 0.15);
+  color: #8e1f1b;
 }
 
 .alert--success {
-  background: rgba(48, 142, 69, 0.15);
-  color: #308e45;
+  background: rgba(94, 185, 94, 0.15);
+  color: #2e6a2e;
 }
 
 .alert--info {
-  background: rgba(187, 162, 40, 0.15);
-  color: #bba228;
+  background: rgba(250, 210, 50, 0.15);
+  color: #a88804;
 }
 
 .btn {
-  border: 0;
-  height: 35px;
   display: inline-block;
-  border-radius: 0.25em;
-  font-weight: bold;
-  margin: 0 0.25em 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   padding: 0.5em 1em;
   cursor: pointer;
 }
@@ -276,22 +272,11 @@ small {
   box-shadow: none;
   text-shadow: none;
   cursor: default;
-  font-weight: normal;
 }
 
 .btn--primary {
   background-color: #94c535;
   color: white;
-}
-
-.btn--secondary {
-  background-color: #0a6fa7;
-  color: white;
-}
-
-.form {
-  margin-bottom: 1em;
-  overflow: hidden;
 }
 
 .form--stacked .form__control,
@@ -316,9 +301,8 @@ small {
 }
 
 .form__control {
-  border: 0.125em solid #cccccc;
-  border-radius: 0.25em;
-  height: 35px;
+  border: 0.125em solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   padding: 0.5em 1em;
   margin-bottom: 1em;
 }
@@ -333,7 +317,6 @@ small {
   box-shadow: none;
   text-shadow: none;
   cursor: default;
-  font-weight: normal;
 }
 
 [hidden] {

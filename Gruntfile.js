@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
@@ -44,9 +43,6 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      html: {
-        files: ['index.html']
-      },
       js: {
         files: ['js/*.js']
         //tasks: ['jshint'] //todo
@@ -60,7 +56,6 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['bemo-dev.css'],
-        //tasks: ['cssmin', 'csslint']
       },
     },
     connect: {
@@ -88,7 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-bake');
 
-  grunt.registerTask('default', ['sass:dist', 'cssmin']);
+  grunt.registerTask('default', ['sass:dist', 'cssmin', 'bake']);
   grunt.registerTask('dev', ['connect', 'watch']);
 
 };
