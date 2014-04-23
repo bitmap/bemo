@@ -5,7 +5,7 @@
 
 @mixin check-lightness($var) {
   @if lightness($var) < 50% {color: white}
-  @else {color: inherit;}
+  @else {}
 }
 
 @mixin disabled-state {
@@ -13,8 +13,9 @@
   &[disabled]:hover,
   &[disabled]:focus,
   &[disabled]:active {
-    background-color: $theme_border;
+    background-color: #EEE;
     color: #A9A9A9;
+    border-color: #EEE;
     box-shadow: none;
     text-shadow: none;
     cursor: default;

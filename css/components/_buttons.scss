@@ -1,40 +1,35 @@
 @mixin btn-variant($color) {
   background-color: $color;
   @include check-lightness($color);
-
-  &:hover, &:focus {
-    background-color: mix(black, $color, 5%);
-    @include check-lightness($color);
-  }
-
-  &:active {
-    background-color: mix(black, $color, 15%);
-    box-shadow: inset 0 0.125em 0 $theme_border;
-  }
 }
 
 @mixin btn {
-  border: $border $theme_border;
+  border: 0;
+  height: 35px;
   display: inline-block;
   border-radius: $border_radius;
-font-weight: bold;
+  font-weight: bold;
   margin: 0 0.25em 0 0;
   padding: 0.5em 1em;
-  box-shadow: inset 0 1px 0 fade-out(white, 0.75);
   cursor: pointer;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 
   &:focus { outline: 0 }
+  &:hover {
+    background-image: 
+    linear-gradient(fade-out(white, 0.75), transparent);
+    text-decoration: none;
+  }
+  &:active {
+    background-image: none;
+    box-shadow: inset 0 2px 2px fade-out(black, 0.9);
+
+  }
 
   @include disabled-state();
 }
 
 .btn {
   @include btn;
-  @include btn-variant(#ddd);
 }
 
 .btn--primary {
