@@ -74,7 +74,7 @@ module.exports = function(grunt) {
     bake: {
       build: {
           files: {
-              'smoketest.htm': 'css/tests/oven.htm'
+              'tests/smoketest.htm': 'tests/css/components.htm'
           }
       }
     }
