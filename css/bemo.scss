@@ -1,5 +1,4 @@
 @import 'config';
-@import 'utils';
 @import 'reset';
 
 html {
@@ -25,6 +24,8 @@ a {
   }
 }
 
+@import 'utils';
+
 // Base Styles
 @import 'base/typography';
 @import 'base/layout';
@@ -36,6 +37,6 @@ a {
 @import 'components/media';
 @import 'components/forms';
 @import 'components/tables';
-
+@import 'components/tooltip';
 
 [hidden] {display: none;}

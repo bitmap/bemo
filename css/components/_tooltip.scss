@@ -1,0 +1,26 @@
+.tooltip {
+	font-size: 90%;
+	position: absolute;
+	bottom: 2em;
+	left: 0;
+	background: $gray_ltr;
+	padding: ($gutter/2); 
+	min-width: 150px; 
+	text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 500ms, opacity 250ms 250ms;
+
+}
+
+.tooltip-trigger {
+	position: relative;
+	overflow: hidden;
+}
+
+.tooltip-trigger:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+
+
+}
