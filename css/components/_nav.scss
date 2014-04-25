@@ -1,25 +1,33 @@
 .nav {
   background-color: $nav_background;
   @include check-lightness($nav_background);
+  @extend %bottom-gutter;
+}
+
+.nav ul {
+  @extend %normalize;
 }
 
 // basic block styles to extend
 %nav__block {
   display: block;
   color: inherit;
-  padding: ($gutter / 2) $gutter;
+  padding: $gutter;
 }
 
 .nav__item {
   @extend %nav__block;
-  text-decoration: none;
+
   &:hover {
     @if lightness($nav_background) > 50% {
-      background: rgba(black, 0.025);
+      background: rgba(black, 0.05);
     } @else {
-      background: rgba(white, 0.10);
+      background: rgba(white, 0.15);
     }
     color: inherit;
+    text-decoration: none;
+
+    + .subnav { display: block }
   }
 }
 
@@ -32,6 +40,60 @@
 }
 
 .nav--horizontal {
-  li {display: inline-block}
-  .nav__heading {border: none}
+  > ul > li {display: inline-block}
+  > ul > .nav__heading {border: none}
+}
+
+.has-subnav {
+  position: relative;
+
+  > .nav__item { padding-right: 2em;}
+  > .nav__item::after {
+    content: '';
+    position: absolute;
+    margin: 0.5em;
+    @if lightness($nav_background) > 50% {
+      @include triangle(down, rgba(black, 0.5), 5px);
+    } @else {
+      @include triangle(down, rgba(white, 0.5), 5px);
+    }
+  }
+}
+
+.has-subnav-right {
+  position: relative;
+
+  > .nav__item { padding-right: 2em;}
+  > .nav__item::after {
+    content: '';
+    position: absolute;
+    margin: 0.3em 0.5em;
+    @if lightness($nav_background) > 50% {
+      @include triangle(right, rgba(black, 0.5), 5px);
+    } @else {
+      @include triangle(right, rgba(white, 0.5), 5px);
+    }
+  }
+}
+
+.subnav {
+  min-width: 150px;
+  @if lightness($nav_background) > 50% {
+    background-color: $nav_background;
+    border: 1px solid $gray_lt_a;
+  } @else {
+    background-color: mix(black, $nav_background, 10%);
+  }
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  &:hover {display: block;}
+}
+
+.subnav--right {
+  left: 100%;
+  right: 0;
+  top: 0;
+  &:hover {display: block;}
 }
