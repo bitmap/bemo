@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         files: ['bemo-dev.css']
       },
       csstests: {
-        files: ['css/tests/*.htm'],
+        files: ['tests/css/*.htm'],
         tasks: ['bake:build']
       },
     },
