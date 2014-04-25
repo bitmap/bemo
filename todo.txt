@@ -1,0 +1,56 @@
+BEMO
+
+  - reset
+  - utils (mixins)
+  - variables (config?)
+
+# Base
+  * layout (grid)
+  * typography
+
+# Components
+  * alerts
+  * buttons
+  – forms
+  – lists
+  - blockquotes
+  * nav
+  – tables
+
+# Modules
+  – aside
+  – footer
+  – header
+  - panel
+
+MAYBES
+
+# Components
+  - Accessible form controls
+  - Tabbed navigation
+  - Responsive tables
+  - Accordions
+  - Media lists
+  - Dropdowns
+  - Pagination
+  - Data tables
+  - Icon fonts
+
+# Strategy
+  - Responsive images
+  - Responsive typography
+  - Accessibility architecture
+  - Legacy browser support
+  - Performance budget
+  - Interaction/Animations
+  - Responsive advertising
+
+# Layouts
+  - Homepage layout
+  - Subpage layout
+  - Article index layout
+  - Article layout
+  - Product index layout
+  - Product detail layout
+  - Sign up flow
+  - Checkout flow
