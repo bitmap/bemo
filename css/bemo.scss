@@ -1,10 +1,16 @@
 @import 'config';
-@import 'mixins';
+@import 'utils';
 @import 'reset';
 
-body {
-  font-size: 14px;
+html {
   font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
   line-height: 1.4;
   color: $theme_text-color;
 }

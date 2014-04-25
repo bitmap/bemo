@@ -1,7 +1,7 @@
 .table { 
-  width: 100%;
+  //width: 100%;
   border-collapse: collapse;
-  margin-bottom: $gutter;
+  @extend %bottom-gutter;
 
   td, th {
     padding: ($gutter / 2);

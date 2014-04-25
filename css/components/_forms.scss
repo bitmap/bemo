@@ -1,13 +1,15 @@
 .form {
-  margin-bottom: $gutter;
+  @extend %bottom-gutter;
 }
 
-.form--stacked .form__control,
-.form--stacked .form__label {
-  display: block;
+.form--stacked {
+  > .form__control,
+  > .form__label {
+    display: block;
+  }
 }
 
-.form__group .form__label {
+.form__group > .form__label {
   display: inline-block;
   text-align: right;
   vertical-align: middle;
