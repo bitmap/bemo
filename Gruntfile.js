@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           cacheLocation: 'css/.sass-cache'
         },
         files: {
-          'bemo-dev.css':'css/bemo.scss',
+          'tests/bemo-dev.css':'css/bemo.scss',
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         tasks: ['sass:dev']
       },
       css: {
-        files: ['bemo-dev.css']
+        files: ['tests/bemo-dev.css']
       },
       csstests: {
         files: ['tests/css/*.htm'],
