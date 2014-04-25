@@ -1,8 +1,3 @@
-%row {
-  overflow: hidden;
-  clear: both;
-}
-
 @for $i from 1 through $grid_columns {
   %fluid-columns-#{$i} {
     width: ((100 / $grid_columns) * $i) * 1%;
@@ -16,17 +11,21 @@
 }
 
 // rows
-.row {
-    @extend %row;
+.grid__row {
+    //@extend %row;
 }
 
-.row--cell {
+.grid__unit {
+    display: inline-block;
+}
+
+.grid__row--cell {
     display: table;
     width: 100%;
     border-spacing: $gutter $gutter / 2;
 }
 
-.row--cell.row__unit {
+.grid__row--cell.row__unit {
     display: table-cell;
     vertical-align: top;
     overflow: hidden;
@@ -40,7 +39,7 @@
 }
 
 @for $i from 1 through $grid_columns {
-  .col-#{$i}.fixed {
+  .col-#{$i}--fixed {
     @extend %fixed-columns-#{$i};
   }
 }
