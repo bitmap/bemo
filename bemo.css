@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-}
-
 input,
 button,
 select,
@@ -47,7 +43,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.menu ul {
+.menu, .submenu {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -112,54 +109,6 @@ a:hover {
   width: 100%;
 }
 
-.col-1--fixed {
-  width: 83.33333px;
-}
-
-.col-2--fixed {
-  width: 166.66667px;
-}
-
-.col-3--fixed {
-  width: 250px;
-}
-
-.col-4--fixed {
-  width: 333.33333px;
-}
-
-.col-5--fixed {
-  width: 416.66667px;
-}
-
-.col-6--fixed {
-  width: 500px;
-}
-
-.col-7--fixed {
-  width: 583.33333px;
-}
-
-.col-8--fixed {
-  width: 666.66667px;
-}
-
-.col-9--fixed {
-  width: 750px;
-}
-
-.col-10--fixed {
-  width: 833.33333px;
-}
-
-.col-11--fixed {
-  width: 916.66667px;
-}
-
-.col-12--fixed {
-  width: 1000px;
-}
-
 .grid__unit {
   float: left;
   padding: 0.5em;
@@ -188,6 +137,9 @@ a:hover {
 .menu {
   background-color: #eeeeee;
 }
+.menu > li {
+  display: inline-block;
+}
 
 .menu__item, .menu__heading {
   display: block;
@@ -206,7 +158,6 @@ a:hover {
 }
 
 .menu__heading {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   font-size: 90%;
   font-weight: bold;

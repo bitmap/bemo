@@ -12,10 +12,12 @@
   background-color: $menu_background;
   @include check-lightness($menu_background);
   @extend %bottom-gutter;
+  @extend %normalize-list;
+  > li {display: inline-block}
+
 }
 
-.menu ul {
-  @extend %normalize;
+.menu {
 }
 
 // basic block styles to extend
@@ -43,7 +45,6 @@
 
 .menu__heading {
   @extend %menu__block;
-  border-bottom: 1px solid rgba(black, 0.10);
   text-transform: uppercase;
   font-size: 90%;
   font-weight: bold;
@@ -71,6 +72,7 @@
 }
 
 .submenu {
+  @extend %normalize-list;
   @if lightness($menu_background) > 50% {
     background-color: white;
     border: 1px solid $gray_lt_a;

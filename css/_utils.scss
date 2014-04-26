@@ -1,4 +1,5 @@
-%normalize {
+%normalize-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +51,7 @@
 }
 
 @mixin triangle($direction, $color, $size) {
- 
+
   @if $direction == "left" {
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
@@ -71,7 +72,7 @@
     border-left: $size solid transparent;
     border-top: $size solid $color;
   }
- 
+
   height: 0;
   width: 0;
 }

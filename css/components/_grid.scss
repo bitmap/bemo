@@ -45,9 +45,9 @@
   }
 }
 
-@for $i from 1 through $grid_columns {
-  .col-#{$i}--fixed {
-    @extend %fixed-columns-#{$i};
-  }
-}
+// @for $i from 1 through $grid_columns {
+//   .col-#{$i}--fixed {
+//     @extend %fixed-columns-#{$i};
+//   }
+// }
 
