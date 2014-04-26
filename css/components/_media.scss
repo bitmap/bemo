@@ -1,19 +1,13 @@
-@mixin media-obj() {
-	.pull-left { float: left; }
-	.pull-right { float: right; }
-	 
-	.media {
-		display: block;
-		overflow: hidden;
-	}
-	 
-	.media__body {
-		overflow: hidden;
-		padding: ($gutter / 2);
-		p { margin-top: 0; }
-	}
+.pull-left { float: left; }
+.pull-right { float: right; }
 
-	.media__img {
-		border: none;
-	}
+.media {
+	display: block;
+	overflow: hidden;
+}
+
+.media__body {
+	overflow: hidden;
+	padding: ($gutter / 2);
+	p { margin-top: 0; }
 }
