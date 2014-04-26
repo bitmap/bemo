@@ -10,28 +10,35 @@
   }
 }
 
-// rows
-.grid__row {
-    //@extend %row;
+.grid {
+  @extend %clearfix;
 }
 
 .grid__unit {
-    display: inline-block;
+    float: left;
+    padding: ($gutter/2);
 }
 
-.grid__row--cell {
+.grid--table {
     display: table;
     width: 100%;
-    border-spacing: $gutter $gutter / 2;
 }
 
-.grid__row--cell.row__unit {
+.grid--flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid--table > .grid__unit {
     display: table-cell;
     vertical-align: top;
     overflow: hidden;
 }
 
-// columns
+.grid--flex > .grid__unit {
+    flex: 1;
+}
+
 @for $i from 1 through $grid_columns {
   .col-#{$i} {
     @extend %fluid-columns-#{$i};

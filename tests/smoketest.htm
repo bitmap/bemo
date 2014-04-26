@@ -2,8 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="bemo-dev.css">
+    <style>
+      div[class*='col'] {background: #eee; height: 50px; box-shadow: 0 0 0 1px gray}
+    </style>
   </head>
-  <body style="width: 600px; margin: 0 auto;">
+  <body style="max-width: 1000px; margin: 0 auto;">
   	<nav class="nav nav--horizontal">
   	  <ul>
   	    <li class="nav__heading">Heading</li>
@@ -39,6 +42,77 @@
     <h6>Heading 6</h6>
     
     <p>Lorem ipsum dolor <span class="tooltip-trigger"><a href="#">sit amet</a><span class="tooltip">This is a tooltip.</span></span>, consectetur adipiscing elit. Donec quis feugiat nisl. Etiam fringilla elementum adipiscing. Sed sed semper ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vitae euismod justo. Vestibulum nisl metus, facilisis eu erat et, gravida aliquet erat.</p>
+    <div class="grid">
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+        <div class="grid__unit col-1"></div>
+    </div>
+    
+    <div class="grid grid--table">
+        <div class="grid__unit col-2"></div>
+        <div class="grid__unit col-2"></div>
+        <div class="grid__unit col-2"></div>
+        <div class="grid__unit col-2"></div>
+        <div class="grid__unit col-2"></div>
+        <div class="grid__unit col-2"></div>
+    </div>
+    
+    <div class="grid grid--flex">
+        <div class="grid__unit col-3"></div>
+        <div class="grid__unit col-3"></div>
+        <div class="grid__unit col-3"></div>
+        <div class="grid__unit col-3"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-4"></div>
+        <div class="grid__unit col-4"></div>
+        <div class="grid__unit col-4"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-6"></div>
+        <div class="grid__unit col-6"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-7"></div>
+        <div class="grid__unit col-5"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-8"></div>
+        <div class="grid__unit col-4"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-9"></div>
+        <div class="grid__unit col-3"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-10"></div>
+        <div class="grid__unit col-2"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-11"></div>
+        <div class="grid__unit col-1"></div>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__unit col-12"></div>
+    </div>
+    
     <button class="btn btn--primary">Primary</button>
     <button class="btn btn--secondary">Secondary</button>
     <a href="#" class="btn">Anchor</a>
