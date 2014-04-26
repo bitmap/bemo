@@ -26,17 +26,14 @@ a {
 
 @import 'utils';
 
-// Base Styles
-@import 'base/typography';
-@import 'base/layout';
 
 // Common Components
-@import 'components/nav';
+@import 'components/grid';
+@import 'components/menu';
 @import 'components/alerts';
 @import 'components/buttons';
 @import 'components/media';
 @import 'components/forms';
 @import 'components/tables';
-@import 'components/tooltip';
 
 [hidden] {display: none;}

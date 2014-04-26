@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           cacheLocation: 'css/.sass-cache'
         },
         files: {
-          'bemo.css':'css/bemo.scss',
+          'bemo.css':'css/bemo.scss'
         }
       },
       dev: {
@@ -19,6 +19,21 @@ module.exports = function(grunt) {
         },
         files: {
           'tests/bemo-dev.css':'css/bemo.scss',
+        }
+      },
+      components: {
+        options: {
+          style: 'expanded',
+          cacheLocation: 'css/.sass-cache'
+        },
+        files: {
+          'tests/css/alerts.css':'css/components/_alerts.scss',
+          'tests/css/buttons.css':'css/components/_buttons.scss',
+          'tests/css/forms.css':'css/components/_forms.scss',
+          'tests/css/grid.css':'css/components/_grid.scss',
+          'tests/css/menu.css':'css/components/_menu.scss',
+          'tests/css/tables.css':'css/components/_tables.scss',
+          'tests/css/menu.css':'css/components/_menu.scss'
         }
       }
     },
