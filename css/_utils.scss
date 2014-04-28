@@ -29,7 +29,7 @@
   @if lightness($var) < 50% {color: white}
 }
 
-@mixin disabled-state {
+%disabled-state {
   &[disabled],
   &[disabled]:hover,
   &[disabled]:focus,
@@ -43,10 +43,11 @@
   }
 }
 
-@mixin input-focus-state {
-  &:focus {
+%focus-state {
+  &:focus, &:hover {
     outline: 0;
-    border-color: $theme_primary;
+    border-color: $gray_lt_a;
+    text-decoration: none;
   }
 }
 

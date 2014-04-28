@@ -4,7 +4,7 @@
 
 .form--stacked {
   > .form__control,
-  > .form__label {
+  label {
     display: block;
   }
 }
@@ -19,18 +19,18 @@
   margin-left: 6.8em;
 }
 
-.form__label {
+label {
   font-weight: bold;
   min-width: 6em;
   margin: ($gutter/4);
 }
 
 .form__control {
-  border: $border rgba(0,0,0,0.1);
+  border: $border $gray_ltr_a;
   border-radius: $border_radius;
   padding: 0.5em 1em;
   margin-bottom: $gutter;
 
-  @include input-focus-state();
-  @include disabled-state();
+  @extend %focus-state;
+  @extend %disabled-state;
 }

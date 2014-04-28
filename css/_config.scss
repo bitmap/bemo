@@ -13,6 +13,7 @@ $theme_text-color: #222;
 $theme_primary: #94C535;
 $theme_secondary: #0A6FA7;
 
+$gray_ltr_a: rgba(black ,0.1);
 $gray_ltr: #EEE;
 $gray_lt_a: rgba(black, 0.25);
 $gray_lt: #BBB;
@@ -28,7 +29,7 @@ $theme_border: #CCC;
 $theme_link: #00f;
 $theme_link-hover: #f00;
 
-$border: 0.125em solid;
+$border: 2px solid;
 $border_radius: 2px;
 
 $grid_maxwidth: 1000px;
