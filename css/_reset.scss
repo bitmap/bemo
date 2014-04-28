@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 
-input,
-button,
-select,
-textarea,
+.form__control,
 .btn {
   color: inherit;
   font-size: 1em;
@@ -16,7 +13,7 @@ textarea,
   text-transform: none;
 }
 
-button::-moz-focus-inner {
+.btn::-moz-focus-inner {
 	padding: 0;
 	border: 0;
 }
