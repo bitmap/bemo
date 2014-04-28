@@ -4,19 +4,17 @@
   box-sizing: border-box;
 }
 
-input,
-button,
-select,
-textarea,
+.form__control,
 .btn {
   color: inherit;
   font-size: 1em;
   font-family: inherit;
   line-height: normal;
   text-transform: none;
+  margin: 0;
 }
 
-button::-moz-focus-inner {
+.btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -237,8 +235,8 @@ a:hover {
 }
 
 .alert--success {
-  background: rgba(94, 185, 94, 0.15);
-  color: #2e6a2e;
+  background: rgba(0, 202, 190, 0.15);
+  color: #004b46;
 }
 
 .alert--info {
@@ -255,12 +253,16 @@ a:hover {
   cursor: pointer;
 }
 .btn:active {
-  background-image: none;
-  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn--primary {
-  background-color: #94c535;
+  background-color: #0cabe0;
+  color: white;
+}
+
+.btn--secondary {
+  background-color: #00cabe;
   color: white;
 }
 
