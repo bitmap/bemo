@@ -26,3 +26,7 @@
 .btn--primary {
   @include btn-variant($theme_primary);
 }
+
+.btn--secondary {
+  @include btn-variant($theme_secondary);
+}

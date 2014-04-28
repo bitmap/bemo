@@ -122,9 +122,9 @@
     <div class="alert alert--info">Warning</div>
     
     <form class="form">
-      <label class="form__label">Username</label>
+      <label>Username</label>
       <input type="username" placeholder="Username" class="form__control"/>
-      <label class="form__label">Password</label>
+      <label>Password</label>
       <input type="password" placeholder="Password" class="form__control"/>
       <select placeholder="Pick One" class="form__control">
         <option>Oregon</option>
@@ -136,10 +136,10 @@
     </form>
     
     <form class="form form--stacked">
-      <label class="form__label">Username</label>
-      <input type="username" placeholder="Username" class="form__control"/>
-      <label class="form__label">Password</label>
-      <input type="password" placeholder="Password" class="form__control"/>
+      <label>Username</label>
+      <input type="username" placeholder="Username" pattern="[A-Z]{3}[0-9]{4}" class="form__control" required />
+      <label>Password</label>
+      <input type="password" placeholder="Password" class="form__control" required/>
       <select placeholder="Pick One" class="form__control">
         <option>Oregon</option>
         <option>Illinois</option>
@@ -153,11 +153,11 @@
     
     <form class="form">
       <div class="form__group">
-        <label class="form__label">Username</label>
+        <label>Username</label>
         <input type="username" placeholder="Username" class="form__control"/>
       </div>
       <div class="form__group">
-        <label class="form__label">Password</label>
+        <label>Password</label>
         <input type="password" placeholder="Password" class="form__control"/>
       </div>
       <div class="form__group--footer">
