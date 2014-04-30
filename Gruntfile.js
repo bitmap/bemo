@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         options: {
           port: 35729,
           base: '',
-          open: true
+          open: 'tests/smoketest.htm'
         }
       }
     },
