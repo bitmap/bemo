@@ -59,12 +59,13 @@ a:hover {
   clear: both;
 }
 
-[disabled].btn, [disabled].form__control {
+[disabled].btn, [disabled].form__control, [disabled].btn:hover, [disabled].form__control:hover, [disabled].btn:focus, [disabled].form__control:focus, [disabled].btn:active, [disabled].form__control:active {
   background: #EEE;
   color: #A9A9A9;
   border-color: #EEE;
   box-shadow: none;
   text-shadow: none;
+  cursor: default;
   pointer-events: none;
 }
 
@@ -287,28 +288,15 @@ a:hover {
   margin-top: 0;
 }
 
-.form--stacked > .form__control,
-.form--stacked label {
+.form label {
   display: block;
-}
-
-.form__group > .form__label {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-}
-
-.form__group--footer {
-  margin-left: 6.8em;
-}
-
-label {
   font-weight: bold;
   min-width: 6em;
-  margin: 0.25em;
+  margin: 0.25em 0;
 }
 
 .form__control {
+  display: block;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 0.5em 1em;

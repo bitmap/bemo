@@ -126,7 +126,8 @@
       <input type="username" placeholder="Username" class="form__control"/>
       <label>Password</label>
       <input type="password" placeholder="Password" class="form__control"/>
-      <select placeholder="Pick One" class="form__control">
+      <label>State</label>
+      <select class="form__control">
         <option>Oregon</option>
         <option>Illinois</option>
         <option>Alabama</option>
@@ -135,45 +136,21 @@
       <button class="btn btn--primary">Log In</button>
     </form>
     
-    <form class="form form--stacked">
-      <label>Username</label>
-      <input type="username" class="form__control" readonly value="Cabe123"/>
-      <label>Password</label>
-      <input type="password" placeholder="Password" class="form__control" required/>
-      <select placeholder="Pick One" class="form__control">
+    <form class="form">
+      <input type="username" placeholder="Username" class="form__control" disabled/>
+      <input type="password" placeholder="Password" class="form__control" disabled/>
+      <select class="form__control" disabled>
         <option>Oregon</option>
         <option>Illinois</option>
         <option>Alabama</option>
         <option>New York</option>
       </select>
-      <button class="btn btn--primary">Log In</button>
-    </form>
-    
-    <textarea class="form__control" rows="5"></textarea>
-    
-    <form class="form">
-      <div class="form__group">
-        <label>Username</label>
-        <input type="username" placeholder="Username" class="form__control"/>
-      </div>
-      <div class="form__group">
-        <label>Password</label>
-        <input type="password" placeholder="Password" class="form__control"/>
-      </div>
-      <div class="form__group--footer">
-        <button class="btn btn--primary">Log In</button>
-      </div>
+      <button class="btn btn--primary" disabled>Log In</button>
     </form>
     
     <form class="form">
-      <input type="username" placeholder="Username" class="form__control" disabled/>
-      <input type="password" placeholder="Password" class="form__control" disabled/>
-      <button class="btn btn--primary" disabled>Log In</button>
-    </form>
-    <form class="form form--stacked">
-      <input type="username" placeholder="Username" class="form__control" disabled/>
-      <input type="password" placeholder="Password" class="form__control" disabled/>
-      <button class="btn btn--primary" disabled>Log In</button>
+      <label>Tetxarea</label>
+      <textarea class="form__control" rows="5"></textarea>
     </form>
     
     <table class="table">

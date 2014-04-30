@@ -2,30 +2,15 @@
   @extend %bottom-gutter;
 }
 
-.form--stacked {
-  > .form__control,
-  label {
-    display: block;
-  }
-}
-
-.form__group > .form__label {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-}
-
-.form__group--footer {
-  margin-left: 6.8em;
-}
-
-label {
+.form label {
+  display: block;
   font-weight: bold;
   min-width: 6em;
-  margin: ($gutter/4);
+  margin: ($gutter/4) 0;
 }
 
 .form__control {
+  display: block;
   border: $border $gray_ltr_a;
   border-radius: $border_radius;
   padding: 0.5em 1em;
