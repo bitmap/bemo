@@ -29,13 +29,18 @@
   @if lightness($var) < 50% {color: white}
 }
 
+
 %disabled-state {
-  &[disabled] {
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active {
     background: #EEE;
     color: #A9A9A9;
     border-color: #EEE;
     box-shadow: none;
     text-shadow: none;
+    cursor: default;
     pointer-events: none;
   }
 }
