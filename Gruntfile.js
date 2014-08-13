@@ -2,26 +2,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    sass: {
-      dist: {
-        options: {
-          style: 'expanded',
-          cacheLocation: 'css/.sass-cache'
-        },
-        files: {
-          'bemo.css':'css/bemo.scss'
-        }
-      },
-      dev: {
-        options: {
-          style: 'expanded',
-          cacheLocation: 'css/.sass-cache'
-        },
-        files: {
-          'tests/bemo-dev.css':'css/bemo.scss',
-        }
-      }
-    },
     cssmin: {
       css: {
         src: 'bemo.css',
@@ -42,20 +22,6 @@ module.exports = function(grunt) {
     watch: {
       options: {
         livereload: true
-      },
-      js: {
-        files: ['js/*.js']
-        //tasks: ['jshint'] //todo
-      },
-      sass: {
-        options: {
-          livereload: false,
-        },
-        files: ['css/**/*.scss'],
-        tasks: ['sass:dev']
-      },
-      css: {
-        files: ['tests/bemo-dev.css']
       },
       csstests: {
         files: ['tests/css/*.htm'],

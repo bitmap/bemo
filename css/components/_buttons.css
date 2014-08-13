@@ -1,0 +1,31 @@
+.btn {
+  background-color: var(--gray);
+  background: transparent;
+  display: inline-block;
+  border: 2px solid var(--gray_ltr_a);
+  border-radius: var(--border_radius);
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: 0;
+  border-color: var(--gray_lt_a);
+  text-decoration: none;
+}
+
+.btn:active {
+  box-shadow: inset 0 50px 0 var(--gray_ltr_a);
+}
+
+.btn--primary {
+  background-color: var(--theme_primary);
+  color: white;
+}
+
+.btn--secondary {
+  background-color: var(--theme_secondary);
+  color: white;
+}
+}

@@ -1,0 +1,47 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: calc(var(--gutter) / 2);
+  text-align:  left;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--gray_lt);
+}
+
+.table tfoot td {
+  vertical-align: top;
+  border-top: 2px solid var(--gray_lt);
+}
+
+.table--zebra-row tbody tr:nth-child(odd)  {
+  background-color: var(--gray_ltr);
+}
+
+
+.table--zebra-col th:nth-child(even),
+.table--zebra-col td:nth-child(even) {
+  background-color: var(--gray_ltr);
+}
+
+.table--border-all td, .table--border-all th {
+	border: var(--border) var(--gray_lt);
+}
+
+.table--border-row td {
+		border-top: var(--border) var(--gray_lt);
+}
+
+.table--border-col td,
+.table--border-col th {
+	border-left: var(--border) var(--gray_lt);
+}
+
+.table--border-col td:first-child,
+.table--border-col th:first-child {
+  border-left: 0
+}

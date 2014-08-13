@@ -1,0 +1,45 @@
+@import "_root.css";
+@import "_reset.css";
+@import "_utils.css";
+
+html {
+  font-family: sans-serif;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222222;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@import "components/_grid.css";
+@import "components/_menu.css";
+@import "components/_alerts.css";
+@import "components/_buttons.css";
+@import "components/_media.css";
+@import "components/_forms.css";
+@import "components/_tables.css";
+
+[disabled] {
+  background: #EEE;
+  color: #A9A9A9;
+  border-color: #EEE;
+  box-shadow: none;
+  text-shadow: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+[hidden] {display: none;}

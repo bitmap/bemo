@@ -1,0 +1,14 @@
+.form label {
+  display: block;
+  font-weight: bold;
+  min-width: 6em;
+  margin: (var(--gutter)/4) 0;
+}
+
+.form__control {
+  display: block;
+  border: var(--border) var(--gray_ltr_a);
+  border-radius: var(--border_radius);
+  padding: 0.5em 1em;
+  margin-bottom: var(--gutter);
+}
