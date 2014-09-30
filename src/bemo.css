@@ -6,7 +6,7 @@ html {
   font-family: sans-serif;
   text-size-adjust: 100%;
 }
-
+.test {background: pink;}
 body {
   margin: 0;
   font-size: 14px;
