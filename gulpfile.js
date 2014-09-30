@@ -15,7 +15,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.css', ['myth']);
+  gulp.watch('src/**/*.css', ['build']);
 });
 
 gulp.task('default', ['build']);
