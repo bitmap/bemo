@@ -3,16 +3,12 @@ var myth = require('gulp-myth');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-cssmin');
 
-gulp.task('myth', function() {
+gulp.task('build', function() {
    	gulp.src('src/bemo.css')
-        .pipe(myth())
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
-});
-
-gulp.task('cssmin', function() {
-    gulp.src('dist/bemo.css')
+        .pipe(myth({
+        	sourcemap: true
+        }))
+        .pipe(gulp.dest('dist'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist'));
@@ -22,4 +18,4 @@ gulp.task('watch', function() {
   gulp.watch('src/**/*.css', ['myth']);
 });
 
-gulp.task('default', ['myth']);
+gulp.task('default', ['build']);
