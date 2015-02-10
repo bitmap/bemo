@@ -1,107 +1,125 @@
 <!DOCTYPE html>
+<title>Bemo Style</title>
 <link rel="stylesheet" href="../dist/bemo.min.css">
-<h1>Poor Man's Styleguide</h1>
+<link rel="stylesheet" href="../node_modules/normalize.css">
 
-<p>A quick-and-dirty frontend styleguide, designed to be copied and pasted into your CMS.</p>
+<style>
+body {margin: 0 0 20em;}
+[id] {color: #0CABE0;}
+</style>
+<nav>
+  <ul class="menu menu--horizontal">
+    <li class="menu__title">BEMO</li>
+    <li><a class="menu__item" href="#">About</a></li>
+    <li class="has-submenu">
+      <a class="menu__item">Components</a>
+      <ul class="submenu">
+        <li><a class="menu__item" href="#headings">Headings</a></li>
+        <li><a class="menu__item" href="#paragraph">Paragraph</a></li>
+        <li><a class="menu__item" href="#text-elements">Text Elements</a></li>
+        <li><a class="menu__item" href="#list_types">Lists</a></li>
+        <li><a class="menu__item" href="#tables">Tables</a></li>
+        <li><a class="menu__item" href="#buttons">Buttons</a></li>
+        <li><a class="menu__item" href="#forms">Form Elements</a></li>
+      </ul>
+    </li>
+    <li><a class="menu__item" href="#utilities">Utilities</a></li>
+  </ul>
+</nav>
 
-<strong><a href="http://poormansstyleguide.com">See the full demo at poormansstyleguide.com</a></strong>
+<div class="container">
+<h1 class="hero">About</h1>
+<p>Based on the <a href="http://poormansstyleguide.com">Poor Man's Styleguide</a>.</p>
 
 <hr />
 
 <h1 id="headings">Headings</h1>
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+<h1 class="h1">Heading 1</h1>
+<h2 class="h2">Heading 2</h2>
+<h3 class="h3">Heading 3</h3>
+<h4 class="h4">Heading 4</h4>
+<h5 class="h5">Heading 5</h5>
+<h6 class="h6">Heading 6</h6>
 
 <hr />
 
 <h1 id="headings">Headings with Text</h1>
 
-<h1>Heading 1</h1>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h2>Heading 2</h2>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h4>Heading 4</h4>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h5>Heading 5</h5>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h6>Heading 6</h6>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h1 class="h1">Heading 1</h1>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h2 class="h2">Heading 2</h2>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h3 class="h3">Heading 3</h3>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h4 class="h4">Heading 4</h4>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h5 class="h5">Heading 5</h5>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h6 class="h6">Heading 6</h6>
+<p class="p">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 
 <hr />
 
 <h1 id="paragraph">Paragraph</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+<p class="p p--lead">This is a lead parahraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<p class="p">This is a normal parapgraph. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+<small class="small">This is a "small" element. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</small>
 
-<p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
+<p class="p"><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
 
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 
-<blockquote>
+<blockquote class="blockquote">
   "This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
 </blockquote>
 
 <h1 id="text-elements"> Text Elements</h1>
 
-<p>The <a href="#">a element</a> example</p>
-<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
-<p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example
-<p>The <b>b element</b> example</p>
-<p>The <cite>cite element</cite> example</p>
-<p>The <code>code element</code> example</p>
-<p>The <em>em element</em> example</p>
-<p>The <del>del element</del> example</p>
-<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
-<p>The <i>i element</i> example</p>
-<p>The <ins>ins element</ins> example</p>
-<p>The <kbd>kbd element</kbd> example</p>
-<p>The <mark>mark element</mark> example</p>
-<p>The <q>q element</q> example</p>
-<p>The <q>q element <q>inside</q> a q element</q> example</p>
-<p>The <s>s element</s> example</p>
-<p>The <samp>samp element</samp> example</p>
-<p>The <small>small element</small> example</p>
-<p>The <span>span element</span> example</p>
-<p>The <strong>strong element</strong> example</p>
-<p>The <sub>sub element</sub> example</p>
-<p>The <sup>sup element</sup> example</p>
-<p>The <u>u element</u> example</p>
-<p>The <var>var element</var> example</p>
-
-<hr />
-
-<h1 id="monospace">Monospace / Preformatted</h1>
-<p>Code block wrapped in "pre" and "code" tags</p>
-<pre><code>// Loop through Divs using Javascript.
-var divs = document.querySelectorAll('div'), i;
-
-for (i = 0; i < divs.length; ++i) {
-  divs[i].style.color = "green";
-}</code></pre>
-<p>Monospace Text wrapped in "pre" tags</p>
-<pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p></pre>
+<p class="p">The <a href="#">a element</a> example</p>
+<p class="p">The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+<p class="p">The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example
+<p class="p">The <b>b element</b> example</p>
+<p class="p">The <cite>cite element</cite> example</p>
+<p class="p">The <code>code element</code> example</p>
+<p class="p">The <em>em element</em> example</p>
+<p class="p">The <del>del element</del> example</p>
+<p class="p">The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+<p class="p">The <i>i element</i> example</p>
+<p class="p">The <ins>ins element</ins> example</p>
+<p class="p">The <kbd>kbd element</kbd> example</p>
+<p class="p">The <mark class="mark">mark element</mark> example</p>
+<p class="p">The <s>s element</s> example</p>
+<p class="p">The <samp>samp element</samp> example</p>
+<p class="p">The <small>small element</small> example</p>
+<p class="p">The <span>span element</span> example</p>
+<p class="p">The <strong>strong element</strong> example</p>
+<p class="p">The <sub>sub element</sub> example</p>
+<p class="p">The <sup>sup element</sup> example</p>
+<p class="p">The <u>u element</u> example</p>
+<p class="p">The <var>var element</var> example</p>
 
 <hr />
 
 <h1 id="list_types">List Types</h1>
 
 <h3>Ordered List</h3>
-<ol>
+<ol class="list">
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
 </ol>
 
 <h3>Unordered List</h3>
-<ul>
+<ul class="list">
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ul>
+
+<h3>Unstyled List</h3>
+<ul class="list list--unstyled">
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
@@ -121,7 +139,37 @@ for (i = 0; i < divs.length; ++i) {
 
 <h1 id="tables">Tables</h1>
 
-<table cellspacing="0" cellpadding="0">
+<table class="table" cellspacing="0" cellpadding="0">
+  <tr>
+    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+  </tr>
+  <tr>
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+  <tr class="even">
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+  <tr>
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+</table>
+<br/>
+<table class="table table--zebra-row table--border-col" cellspacing="0" cellpadding="0">
+  <tr>
+    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+  </tr>
+  <tr>
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+  <tr class="even">
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+  <tr>
+    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+  </tr>
+</table>
+<br/>
+<table class="table table--zebra-col table--border-row" cellspacing="0" cellpadding="0">
   <tr>
     <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
   </tr>
@@ -138,127 +186,128 @@ for (i = 0; i < divs.length; ++i) {
 
 <hr />
 
-<h1 id="form_elements">Media and Form Elements</h1>
+<h1 id="buttons">Buttons</h1>
 
-<p>This last section contains elements that don't render well in markdown. Please consult the final section in <a href="https://github.com/bryanbraun/poor-mans-styleguide/blob/gh-pages/index.html">index.html</a>, to see the rest of the styleguide.</p>
+  <button class="btn">Base</button>
+  <button class="btn btn--primary">Primary</button>
+  <button class="btn btn--secondary">Secondary</button>
+  <button class="btn btn--tertiary">Tertiary</button>
+  <a href="#" class="btn">Anchor</a>
+  <input class="btn" type="reset" value="Submit" /> 
+  <button class="btn btn--primary" disabled>Disabled</button>
 
-<h2>Media</h2>
+<h1 id="forms">Form Elements</h1>
 
-<p>The Audio Element:</p>
-<audio controls>
-  <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
-  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<p>The Video Element:</p>
-<video width="320" height="240" controls>
-  <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-  <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-
-<h2>Form Elements</h2>
-
-<p>The Fieldset:</p>
+<p class="p">The Fieldset:</p>
 <fieldset>
   <legend>Legend</legend>
 
-  <p>The Form:</p>
+  <div class="alert">Alert</div>
+  <small class="alert alert--small">Alert</small>
+  <p class="alert alert--error">Alert</p>
+  <div class="alert alert--success">Alert</div>
+  <div class="alert alert--info">Alert</div>
 
-  <form>
-    <p><label for="text_field">Text Field:</label><br />
-    <input type="text" id="text_field" /></p>
 
-    <p><label for="text_area">Text Area:</label><br />
-    <textarea id="text_area"></textarea></p>
+  <form class="form">
+    <label for="text_field">Text Field:</label>
+    <input class="form__control" type="text"/>
 
-    <p><label for="select_element">Select Element:</label><br />
-      <select name="select_element">
-      <optgroup label="Option Group 1">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </optgroup>
-      <optgroup label="Option Group 2">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </optgroup>
-    </select></p>
+    <label for="text_area">Text Area:</label>
+    <textarea class="form__control"></textarea>
 
-    <p><label for="radio_buttons">Radio Buttons:</label><br />
-      <input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1<br/>
-      <input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2<br/>
-      <input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3<br/>
-    </p>
+    <label for="select_element">Select Element:</label>
+    <select class="form__control" name="select_element">
+    <optgroup label="Option Group 1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </optgroup>
+    <optgroup label="Option Group 2">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </optgroup>
+  </select>
 
-    <p><label for="checkboxes">Checkboxes:</label><br />
-      <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Radio 1<br/>
-      <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Radio 2<br/>
-      <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Radio 3<br/>
-    </p>
+    <label>Radio Buttons:</label>
+    <label class="form__radio"><input type="radio" name="radio" value="radio_1" />Radio 1</label>
+    <label class="form__radio"><input type="radio" name="radio" value="radio_2" />Radio 2</label>
+    <label class="form__radio"><input type="radio" name="radio" value="radio_3" />Radio 3</label>
+  
 
-    <p><label for="password">Password:</label><br />
-      <input type="password" class="password" name="password" />
-    </p>
+    <label>Checkboxes:</label>
+    <label class="form__checkbox"><input type="checkbox" value="check_1" />Checkbox 1</label>
+    <label class="form__checkbox"><input type="checkbox" value="check_2" />Checkbox 2</label>
+    <label class="form__checkbox"><input type="checkbox" value="check_3" />Checkbox 3</label>
+    
 
-    <p><label for="file">File Input:</label><br />
-      <input type="file" class="file" name="file" />
-    </p>
+    <label for="password">Password:</label>
+    <input class="form__control" type="password" class="password" name="password" />
+    
+
+    <label for="file">File Input:</label>
+    <input type="file" class="file" name="file" />
+    
 
     <h3>HTML5-specific Form Elements</h3>
 
-    <p><label for="email">Email:</label><br />
-      <input type="email">
-    </p>
+    <label for="email">Email:</label>
+    <input class="form__control" type="email">
+    
 
-    <p><label for="url">URL:</label><br />
-      <input type="url">
-    </p>
+    <label for="url">URL:</label>
+    <input class="form__control" type="url">
+    
 
-    <p><label for="tel">Telephone:</label><br />
-      <input type="tel">
-    </p>
+    <label for="tel">Telephone:</label>
+    <input class="form__control" type="tel">
+    
 
-    <p><label for="number">Number:</label><br />
-      <input type="number" min="0" max="10" step="1" value="5">
-    </p>
+    <label for="number">Number:</label>
+    <input class="form__control" type="number" min="0" max="10" step="1" value="5">
+    
 
-    <p><label for="search">Search:</label><br />
-      <input type="search">
-    </p>
+    <label for="search">Search:</label>
+    <input class="form__control" type="search">
+    
 
-    <p><label for="date">Date:</label><br />
-      <input type="date">
-    </p>
+    <label for="date">Date:</label>
+    <input class="form__control" type="date">
+    
 
-    <p><label for="time">Time:</label><br />
-      <input type="time">
-    </p>
+    <label for="time">Time:</label>
+    <input class="form__control" type="time">
+    
 
-    <p><label for="color">Color:</label><br />
-      <input type="color">
-    </p>
-
-    <p><label for="datalist">Datalist:</label><br />
-      <input list="browsers" name="browser" type="datalist">
-      <datalist id="browsers">
-        <option value="Internet Explorer">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-      </datalist>
-    </p>
-
-    <p><label for="range">Range:</label><br />
-      <input type="range" name="points" min="1" max="10">
-    </p>
-
-    <p>
-      <input class="button" type="reset" value="Clear" /> <input class="button" type="submit" value="Submit" />
-    </p>
+    <label for="datalist">Datalist:</label>
+    <input class="form__control" list="browsers" name="browser" type="datalist">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    
+    <label for="range">Range:</label>
+    <input type="range" name="points" min="1" max="10">
+    
   </form>
 
 </fieldset>
+
+<h1 id="utilities">Utilities</h1>
+
+<table class="table bordered table--zebra-col">
+<tr><th>Text</th><th>U-</th></tr>
+<tr><td>.text-left      </td><td>.u-clearfix</td></tr>
+<tr><td>.text-right     </td><td>.u-block</td></tr>
+<tr><td>.text-center    </td><td>.u-inline</td></tr>
+<tr><td>.text-justify   </td><td>.u-iblock</td></tr>
+<tr><td>.text-nowrap    </td><td></td></tr>
+<tr><td>.text-lowercase </td><td></td></tr>
+<tr><td>.text-uppercase </td><td></td></tr>
+<tr><td>.text-capitalize</td><td></td></tr>
+</table>
+
