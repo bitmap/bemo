@@ -1,12 +1,7 @@
 .alert {
   padding: calc(var(--gutter)/4) calc(var(--gutter)/2);
   border-radius: var(--border_radius);
-  font-weight: bold;
-}
-
-.alert--small {
-	margin: calc(var(--gutter)/2) 0;
-  padding: calc(var(--gutter)/2) var(--gutter);
+  margin: 0.5em 0;
 }
 
 .alert--error {

@@ -1,0 +1,70 @@
+.h1 { font-size: var(--h1) }
+.h2 { font-size: var(--h2) }
+.h3 { font-size: var(--h3) }
+.h4 { font-size: var(--h4) }
+.h5 { font-size: var(--h5) }
+.h6 { font-size: var(--h6) }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 1em 0;
+  font-weight: normal;
+}
+
+.h4 {font-style: italic;}
+
+.h6 {}
+
+.p { margin: 0 0 1em }
+
+.p--lead { 
+  margin-bottom: 1.5em;
+  font-size: calc(1rem * 1.15);
+ }
+
+ .p > img {
+  display: block;
+  margin: 1em auto 2em;
+ }
+
+.small {
+  font-size: var(--sm);
+  font-weight: normal;
+}
+
+.blockquote {
+  margin: 0 0 0 1em;
+  padding: 1em 2.5em;
+  border-left: var(--border);
+}
+
+.blockquote .p:last-child, 
+.blockquote .list:last-child {
+  margin-bottom: 0;
+}
+
+.mark {
+  background-color: var(--theme_alert-warning);
+  padding: 0.2em;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 2.5em;
+}
+
+.list .list {
+  margin-bottom: 0;
+}
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: black;
+  margin-top: 2em;
+}

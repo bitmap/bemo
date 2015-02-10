@@ -5,7 +5,8 @@
 .table td,
 .table th {
   padding: calc(var(--gutter) / 2);
-  text-align:  left;
+  text-align: left;
+  min-width: 110px;
 }
 
 .table thead th {
@@ -18,7 +19,7 @@
   border-top: 2px solid var(--gray_lt);
 }
 
-.table--zebra-row tbody tr:nth-child(odd)  {
+.table--zebra-row tbody tr:nth-child(even)  {
   background-color: var(--gray_ltr);
 }
 
@@ -29,16 +30,16 @@
 }
 
 .table--border-all td, .table--border-all th {
-	border: var(--border) var(--gray_lt);
+  border: var(--border) var(--gray_lt);
 }
 
 .table--border-row td {
-		border-top: var(--border) var(--gray_lt);
+    border-top: var(--border) var(--gray_lt);
 }
 
 .table--border-col td,
 .table--border-col th {
-	border-left: var(--border) var(--gray_lt);
+  border-left: var(--border) var(--gray_lt);
 }
 
 .table--border-col td:first-child,

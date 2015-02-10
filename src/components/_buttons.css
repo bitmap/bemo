@@ -12,6 +12,7 @@
 .btn:hover {
   outline: 0;
   border-color: var(--gray_lt_a);
+  box-shadow: inset 0 50px 0 rgba(255,255,255,0.25);
   text-decoration: none;
 }
 
@@ -28,4 +29,8 @@
   background-color: var(--theme_secondary);
   color: white;
 }
+
+.btn--tertiary {
+  background-color: var(--theme_tertiary);
+  color: white;
 }

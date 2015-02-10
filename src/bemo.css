@@ -1,6 +1,5 @@
 @import "_root.css";
 @import "_reset.css";
-@import "_utils.css";
 
 html {
   font-family: sans-serif;
@@ -8,13 +7,13 @@ html {
 }
 body {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
-  color: #222222;
+  color: #333;
 }
 
 a {
-  color: blue;
+  color: var(--theme_link);
   cursor: pointer;
   text-decoration: none;
 }
@@ -23,6 +22,8 @@ a:hover {
   text-decoration: underline;
 }
 
+/* components */
+@import "components/_type.css";
 @import "components/_grid.css";
 @import "components/_menu.css";
 @import "components/_alerts.css";
@@ -31,6 +32,10 @@ a:hover {
 @import "components/_forms.css";
 @import "components/_tables.css";
 
+/* utilities */
+@import "_utils.css";
+
+/* attribute helpers */
 [disabled] {
   background: #EEE;
   color: #A9A9A9;

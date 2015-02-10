@@ -5,14 +5,15 @@
   --h2: 1.602em;
   --h3: 1.424em;
   --h4: 1.266em;
-  --h5: 1.125em;
-  --h6: 1em;
+  --h5: 1.266em;
+  --h6: 1.125em;
   --sm: 80%;
 
   --theme_text-color: #222;
 
   --theme_primary: #0CABE0;
   --theme_secondary: #00CABE;
+  --theme_tertiary: #CABE00;
 
   --gray_ltr_a: rgba(0,0,0,0.1);
   --gray_ltr: #EEE;
@@ -34,7 +35,7 @@
   --border: 2px solid;
   --border_radius: 2px;
 
-  --grid_maxwidth: 1000px;
+  --grid_max-width: 1000px;
   --grid_columns: 12;
 
   --menu_background: #eee;
