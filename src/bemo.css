@@ -1,5 +1,5 @@
-@import "_root.css";
-@import "_reset.css";
+@import "base/_root.css";
+@import "base/_reset.css";
 
 html {
   font-family: sans-serif;
@@ -33,7 +33,7 @@ a:hover {
 @import "components/_tables.css";
 
 /* utilities */
-@import "_utils.css";
+@import "utils/_utils.css";
 
 /* attribute helpers */
 [disabled] {
