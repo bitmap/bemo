@@ -2,7 +2,7 @@
   background-color: var(--gray);
   background: transparent;
   display: inline-block;
-  border: 2px solid var(--gray_ltr_a);
+  border: var(--border) var(--gray_ltr_a);
   border-radius: var(--border_radius);
   padding: 0.5em 1em;
   cursor: pointer;
@@ -12,7 +12,6 @@
 .btn:hover {
   outline: 0;
   border-color: var(--gray_lt_a);
-  box-shadow: inset 0 50px 0 rgba(255,255,255,0.25);
   text-decoration: none;
 }
 
@@ -33,4 +32,13 @@
 .btn--tertiary {
   background-color: var(--theme_tertiary);
   color: white;
+}
+
+/* Bugfixes */
+.btn + .btn {
+  margin-left: 5px;
+}
+
+.btn.pull-right + .btn.pull-right {
+  margin-right: 5px;
 }

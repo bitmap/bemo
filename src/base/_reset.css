@@ -10,9 +10,21 @@
   line-height: normal;
   text-transform: none;
   margin: 0;
+  box-shadow: 0 1px 5px -1px rgba(0,0,0,0.2);
+}
+
+.form__control:hover,
+.form__control:active,
+.form__control:focus,
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow:
+    box-shadow: 0 1px 5px -1px rgba(0,0,0,0.2),
+    inset 0 50px 0 rgba(255,255,255,0.2);
 }
 
 .btn::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }

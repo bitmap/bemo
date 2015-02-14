@@ -32,8 +32,8 @@
   --theme_link: #00f;
   --theme_link-hover: #f00;
 
-  --border: 2px solid;
-  --border_radius: 2px;
+  --border: 1px solid;
+  --border_radius: 3px;
 
   --grid_max-width: 1000px;
   --grid_columns: 12;
