@@ -1,11 +1,11 @@
 {
   "name": "bemo",
-  "version": "0.0.2",
-  "homepage": "https://github.com/bitmap/bemo",
+  "version": "0.5.0",
+  "homepage": "https://github.com/cabebr/bemo",
   "authors": [
     "Cabe Branson <caleb.branson@gmail.com>"
   ],
-  "description": "oh oh css",
+  "description": "Minimalist CSS boilerplate",
   "main": "bemo.css",
   "keywords": [
     "css"
