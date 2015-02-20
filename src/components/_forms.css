@@ -1,16 +1,7 @@
-.form__radio > input,
-.form__checkbox > input {
-  font-size: 100%;
-  line-height: normal;
-  vertical-align: baseline;
-  margin: 0 0.5em;
-}
-
 fieldset {
   padding: 0 2em 2em;
   border: var(--border);
   border-radius: var(--border_radius);
-
 }
 
 legend { 
@@ -24,22 +15,32 @@ label {
   margin: calc(var(--gutter)/4) 0;
 }
 
+.form__control,
+.form__select {
+  display: block;
+  border: var(--border);
+  border-radius: var(--border_radius);
+  padding: 0.75em;
+  margin-bottom: var(--gutter);
+}
+
+.form__select {
+  -webkit-appearance: none;
+  padding-right: 2rem;
+}
+
 .form__radio,
 .form__checkbox {
   margin: .5em 0;
   display: block;
 } 
 
-.form__control {
-  display: block;
-  border: var(--border) var(--gray_ltr_a);
-  border-radius: var(--border_radius);
-  padding: 0.5em 1em;
-  margin-bottom: var(--gutter);
+.form__radio > input,
+.form__checkbox > input {
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+  margin: 0 0.5em;
 }
 
-.form__control:hover,
-.form__control:focus {
-  border-color: var(--theme_primary);
-  outline: 0;
-}
+

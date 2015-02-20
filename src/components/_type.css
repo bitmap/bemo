@@ -12,8 +12,6 @@
 
 .h4 {font-style: italic;}
 
-.h6 {}
-
 .p { margin: 0 0 1em }
 
 .p--lead { 
@@ -21,10 +19,12 @@
   font-size: calc(1rem * 1.15);
  }
 
- .p > img {
+.img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin: 1em auto 2em;
- }
+  margin: 1em auto;
+}
 
 .small {
   font-size: var(--sm);
@@ -64,7 +64,7 @@
 
 hr {
   border: none;
-  height: 2px;
-  background: black;
+  height: var(--base);
+  background: var(--shade);
   margin-top: 2em;
 }

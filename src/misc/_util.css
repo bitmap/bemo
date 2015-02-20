@@ -18,11 +18,11 @@
   clear: both;
 }
 
-.u-block { display: block }
+.u-block  { display: block }
 .u-iblock { display: inline-block }
 .u-inline { display: inline }
 
 .bordered {
-	border: var(--border) var(--gray_lt);
+	border: var(--border);
 	border-radius: var(--border_radius);
 }

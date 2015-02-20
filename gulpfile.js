@@ -5,9 +5,7 @@ var cssmin = require('gulp-cssmin');
 
 gulp.task('build', function() {
    	gulp.src('src/bemo.css')
-        .pipe(myth({
-        	sourcemap: true
-        }))
+        .pipe(myth())
         .pipe(gulp.dest('dist'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))

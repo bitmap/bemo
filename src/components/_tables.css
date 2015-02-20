@@ -11,35 +11,35 @@
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid var(--gray_lt);
+  border-bottom: var(--border);
 }
 
 .table tfoot td {
   vertical-align: top;
-  border-top: 2px solid var(--gray_lt);
+  border-top: var(--border);
 }
 
 .table--zebra-row tbody tr:nth-child(even)  {
-  background-color: var(--gray_ltr);
+  background-color: var(--shade);
 }
 
 
 .table--zebra-col th:nth-child(even),
 .table--zebra-col td:nth-child(even) {
-  background-color: var(--gray_ltr);
+  background-color: var(--shade);
 }
 
 .table--border-all td, .table--border-all th {
-  border: var(--border) var(--gray_lt);
+  border: var(--border);
 }
 
 .table--border-row td {
-    border-top: var(--border) var(--gray_lt);
+    border-top: var(--border);
 }
 
 .table--border-col td,
 .table--border-col th {
-  border-left: var(--border) var(--gray_lt);
+  border-left: var(--border);
 }
 
 .table--border-col td:first-child,

@@ -1,20 +1,21 @@
 .alert {
   padding: calc(var(--gutter)/4) calc(var(--gutter)/2);
+  border: var(--border);
   border-radius: var(--border_radius);
   margin: 0.5em 0;
 }
 
 .alert--error {
   background-color: color(var(--theme_alert-errors) tint(50%));
-  color: color(var(--theme_alert-errors) shade(25%))
+  color: color(var(--theme_alert-errors) shade(50%))
 }
 
 .alert--success {
   background-color: color(var(--theme_alert-success) tint(50%));
-  color: color(var(--theme_alert-success) shade(25%))
+  color: color(var(--theme_alert-success) shade(50%))
 }
 
 .alert--info {
   background-color: color(var(--theme_alert-warning) tint(50%));
-  color: color(var(--theme_alert-warning) shade(25%))
+  color: color(var(--theme_alert-warning) shade(50%))
 }

@@ -1,26 +1,7 @@
-@import "base/_root.css";
+@import "_root.css";
+
+/* base */
 @import "base/_reset.css";
-
-html {
-  font-family: sans-serif;
-  text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #333;
-}
-
-a {
-  color: var(--theme_link);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 /* components */
 @import "components/_type.css";
@@ -33,17 +14,5 @@ a:hover {
 @import "components/_tables.css";
 
 /* utilities */
-@import "utils/_utils.css";
-
-/* attribute helpers */
-[disabled] {
-  background: #EEE;
-  color: #A9A9A9;
-  border-color: #EEE;
-  box-shadow: none;
-  text-shadow: none;
-  cursor: default;
-  pointer-events: none;
-}
-
-[hidden] {display: none;}
+@import "misc/_util.css"; 
+@import "misc/_attr.css";

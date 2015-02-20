@@ -1,5 +1,6 @@
 .menu {
   background-color: var(--menu_background);
+  border-bottom: var(--border);
 }
 
 .menu,
@@ -7,7 +8,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .menu__title {
@@ -62,12 +62,16 @@ a.menu__item:hover {
 
 .submenu {
   background-color: var(--menu_background);
+  border: var(--border);
   min-width: 150px;
   border-radius: var(--border_radius);
   transition: visibility 500ms, opacity 250ms 250ms;
   position: absolute;
   left: -1em;
   right: -1em;
+  margin-top: -0.5em;
   visibility: hidden;
   opacity: 0;
+  box-shadow: var(--shadow_2x);
+
 }
