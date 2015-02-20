@@ -1,9 +1,6 @@
-// Development
 npm-debug.log
 node_modules
-.sass-cache
-bemo-dev.css
-normalize.scss
 *.sublime-project
 *.sublime-workspace
 tmp
+dist
