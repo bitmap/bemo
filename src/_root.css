@@ -1,0 +1,43 @@
+:root {
+  --gutter: 1rem;
+
+  --h1: 2.027em;
+  --h2: 1.602em;
+  --h3: 1.424em;
+  --h4: 1.266em;
+  --h5: 1.266em;
+  --h6: 1.125em;
+  --sm: 80%;
+
+  --theme_text-color: #333;
+
+  --theme_primary: #0CABE0;
+  --theme_secondary: #00CABE;
+  --theme_tertiary: #CABE00;
+
+  --transparent: rgba(255, 255, 255, 0.90);
+  --shade: rgba(0,0,0,0.15);
+  --tint: rgba(255,255,255,0.15);
+
+  --theme_alert-warning: #FAD232;
+  --theme_alert-errors: #DD514C;
+  --theme_alert-success: #00cc00;
+
+  --theme_link: #03c;
+
+  --base: 1px;
+
+  --border_weight: var(--base) solid;
+  --border_color: var(--shade);
+  --border_radius: calc(var(--base) * 2);
+  --border: var(--border_weight) var(--border_color);
+
+  --shadow_color: color(var(--shade) shade(10%));
+  --shadow: 0 var(--base) calc(var(--base) * 2) -var(--base) var(--shadow_color);
+  --shadow_2x: 0 calc(var(--base) * 2) calc(var(--base) * 4) calc(var(--base) * -2) var(--shadow_color);
+
+  --grid_max-width: 1000px;
+  --grid_columns: 12;
+
+  --menu_background: #eee;
+}
