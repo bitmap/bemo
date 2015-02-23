@@ -1,6 +1,4 @@
-npm-debug.log
-node_modules
+*.log
 *.sublime-project
 *.sublime-workspace
-tmp
-dist
+node_modules
