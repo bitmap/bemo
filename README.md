@@ -10,10 +10,10 @@ $ bower install bemo --save
 ##What is this
 **Bemo** isn't a heavy framework, and it isn't designed to replace your site's CSS. **Bemo** is designed to be used on common elements such as buttons and tables. There are a few neat features thrown in like a menu bar, a basic grid, and some utility classes as well.
 
-**Bemo** was built with OOCSS philosophy in mind and leverages some of it's style from BEM methodology. It's completely agnostic and can be used on top of resets like Normalize.
+**Bemo** was built with OOCSS philosophy in mind and leverages some of it's style from [BEM][1] methodology. It's completely agnostic, has no dependencies, and can be used on top of resets like [Normalize][2].
 
 ##Build
-**Bemo** is written in Myth and built using Gulp. You'll need Node.js/npm to build from source.
+**Bemo** is written in [Myth][1] and built using [Gulp][2]. You'll need Node.js/npm to build from source.
 
 ```
 $ git clone git@github.com:cabebr/bemo.git
@@ -34,3 +34,8 @@ Bemo plays nicely with these browsers
 
 ##Docs
 Coming soon!
+
+[1]: https://en.bem.info/method/
+[2]: http://necolas.github.io/normalize.css/
+[3]: http://www.myth.io/
+[4]: http://gulpjs.com/
