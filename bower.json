@@ -1,6 +1,6 @@
 {
   "name": "bemo",
-  "version": "0.5.1",
+  "version": "0.5.1.1",
   "homepage": "https://github.com/cabebr/bemo",
   "authors": [
     "Cabe Branson <caleb.branson@gmail.com>"
@@ -8,7 +8,7 @@
   "description": "Minimalist CSS boilerplate",
   "main": [
     "src/bemo.css",
-    "dist/bemo.css",
+    "dist/bemo.css"
   ],
   "keywords": [
     "css"
