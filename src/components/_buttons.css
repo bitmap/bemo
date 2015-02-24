@@ -23,7 +23,8 @@
 }
 
 /* Bugfixes */
-.btn + .btn {
+.btn + .btn,
+.form__control + .btn {
   margin-left: 5px;
 }
 

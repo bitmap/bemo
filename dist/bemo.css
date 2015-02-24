@@ -1,9 +1,6 @@
-/* config */
-
 /* base */
 
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -323,7 +320,6 @@ a.menu__item:hover {
   border: 1px solid rgba(0,0,0,0.15);
   min-width: 150px;
   border-radius: 2px;
-  -webkit-transition: visibility 500ms, opacity 250ms 250ms;
   transition: visibility 500ms, opacity 250ms 250ms;
   position: absolute;
   left: -1em;
@@ -382,7 +378,8 @@ a.menu__item:hover {
 
 /* Bugfixes */
 
-.btn + .btn {
+.btn + .btn,
+.form__control + .btn {
   margin-left: 5px;
 }
 
