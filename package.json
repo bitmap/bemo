@@ -1,6 +1,6 @@
 {
   "name": "bemo",
-  "version": "0.5.4",
+  "version": "0.6.0",
   "description": "Minimalist CSS bolilerplate",
   "repository": "git://github.com/cabebr/bemo.git",
   "devDependencies": {
