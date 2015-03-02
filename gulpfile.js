@@ -3,9 +3,15 @@ var myth = require('gulp-myth');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-cssmin');
 
-gulp.task('build', function() {
+gulp.task('default', function() {
    	gulp.src('src/bemo.css')
-        .pipe(myth())
+        .pipe(myth({
+          // sourcemap: true,
+          browsers: [
+            'last 2 versions',
+            'Explorer >= 9'
+          ]
+        }))
         .pipe(gulp.dest('dist'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
@@ -13,7 +19,5 @@ gulp.task('build', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.css', ['build']);
+  gulp.watch('src/**/*.css', ['default']);
 });
-
-gulp.task('default', ['build']);
