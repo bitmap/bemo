@@ -1,5 +1,11 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
 }
 
 html {
@@ -12,6 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #333;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -51,13 +58,19 @@ a:hover {
   box-shadow: var(--shadow_2x), inset 0 0 0 100px var(--tint);
 }
 
-.btn:active {
-  box-shadow: inset var(--shadow_2x);
+/* Hacks */
+.form__control[type=number]::-ms-tooltip {
+  display: none;
 }
 
-[class*="btn--"]  {
-  background-clip: border-box;
-  text-shadow: 0 1px 1px var(--shade);
+.form__control[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form__control[type=number]::-webkit-outer-spin-button,
+.form__control[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .btn::-moz-focus-inner {

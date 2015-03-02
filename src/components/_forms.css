@@ -1,23 +1,21 @@
-fieldset {
+.form > fieldset {
   padding: 0 2em 2em;
   border: var(--border);
   border-radius: var(--border_radius);
 }
 
-legend { 
+.form legend {
   padding: 1em;
   font-weight: bold;
 }
 
-label {
-  display: block;
-  min-width: 6em;
-  margin: calc(var(--gutter)/4) 0;
-}
-
 .form__control,
 .form__select {
+  -webkit-appearance: none;
   display: block;
+  background-image: none;
+  transition: border 0.2s ease-out;
+  width: 100%;
   border: var(--border);
   border-radius: var(--border_radius);
   padding: 0.75em;
@@ -25,22 +23,22 @@ label {
 }
 
 .form__select {
-  -webkit-appearance: none;
   padding-right: 2rem;
 }
 
 .form__radio,
 .form__checkbox {
-  margin: .5em 0;
   display: block;
-} 
+  position: relative;
+  padding-left: 2em;
+  line-height: normal;
+  margin: 0.5em 0;
+}
 
 .form__radio > input,
 .form__checkbox > input {
-  font-size: 100%;
-  line-height: normal;
-  vertical-align: baseline;
-  margin: 0 0.5em;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  margin-left: -2em;
 }
-
-

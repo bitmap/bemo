@@ -193,12 +193,14 @@ body {margin: 0 0 20em;}
   <button class="btn btn--secondary">Secondary</button>
   <button class="btn btn--tertiary">Tertiary</button>
   <a href="#buttons" class="btn">Anchor</a>
-  <input class="btn" type="reset" value="Submit" /> 
+  <input class="btn" type="reset" value="Submit" />
   <button class="btn btn--primary" disabled>Disabled</button>
 
 <h1 id="forms">Form Elements</h1>
 
 <p class="p">The Fieldset:</p>
+
+<form class="form">
 <fieldset>
   <legend>Legend</legend>
 
@@ -209,7 +211,7 @@ body {margin: 0 0 20em;}
   <div class="alert alert--info">Alert</div>
 
 
-  <form class="form">
+
     <label for="text_field">Text Field:</label>
     <input class="form__control" type="text"/>
 
@@ -234,51 +236,51 @@ body {margin: 0 0 20em;}
     <label class="form__radio"><input type="radio" name="radio" value="radio_1" />Radio 1</label>
     <label class="form__radio"><input type="radio" name="radio" value="radio_2" />Radio 2</label>
     <label class="form__radio"><input type="radio" name="radio" value="radio_3" />Radio 3</label>
-  
+
 
     <label>Checkboxes:</label>
     <label class="form__checkbox"><input type="checkbox" value="check_1" />Checkbox 1</label>
     <label class="form__checkbox"><input type="checkbox" value="check_2" />Checkbox 2</label>
     <label class="form__checkbox"><input type="checkbox" value="check_3" />Checkbox 3</label>
-    
+
 
     <label for="password">Password:</label>
     <input class="form__control" type="password" class="password" name="password" />
-    
+
 
     <label for="file">File Input:</label>
     <input type="file" class="file" name="file" />
-    
+
 
     <h3>HTML5-specific Form Elements</h3>
 
     <label for="email">Email:</label>
     <input class="form__control" type="email">
-    
+
 
     <label for="url">URL:</label>
     <input class="form__control" type="url">
-    
+
 
     <label for="tel">Telephone:</label>
     <input class="form__control" type="tel">
-    
+
 
     <label for="number">Number:</label>
     <input class="form__control" type="number" min="0" max="10" step="1" value="5">
-    
+
 
     <label for="search">Search:</label>
     <input class="form__control" type="search">
-    
+
 
     <label for="date">Date:</label>
     <input class="form__control" type="date">
-    
+
 
     <label for="time">Time:</label>
     <input class="form__control" type="time">
-    
+
 
     <label for="datalist">Datalist:</label>
     <input class="form__control" list="browsers" name="browser" type="datalist">
@@ -289,13 +291,14 @@ body {margin: 0 0 20em;}
       <option value="Opera">
       <option value="Safari">
     </datalist>
-    
+
     <label for="range">Range:</label>
     <input type="range" name="points" min="1" max="10">
-    
-  </form>
 
 </fieldset>
+
+</form>
+
 
 <h1 id="utilities">Utilities</h1>
 
@@ -310,4 +313,3 @@ body {margin: 0 0 20em;}
 <tr><td>.text-uppercase </td><td></td></tr>
 <tr><td>.text-capitalize</td><td></td></tr>
 </table>
-

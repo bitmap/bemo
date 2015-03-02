@@ -22,6 +22,15 @@
   color: white;
 }
 
+.btn:active {
+  box-shadow: inset var(--shadow_2x);
+}
+
+[class*="btn--"]  {
+  background-clip: border-box;
+  text-shadow: 0 1px 1px var(--shade);
+}
+
 /* Bugfixes */
 .btn + .btn,
 .form__control + .btn {

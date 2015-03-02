@@ -1,5 +1,6 @@
 .table {
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .table td,
@@ -23,7 +24,6 @@
   background-color: var(--shade);
 }
 
-
 .table--zebra-col th:nth-child(even),
 .table--zebra-col td:nth-child(even) {
   background-color: var(--shade);
@@ -34,7 +34,7 @@
 }
 
 .table--border-row td {
-    border-top: var(--border);
+  border-top: var(--border);
 }
 
 .table--border-col td,
